@@ -21,7 +21,7 @@ const projects = [
     category: "UX/UI & FRONTEND",
     description:
       "Selvvalgt eksamensopgave med fokus på at hjælpe husstanden med at holde styr på pligter og ansvar.",
-    image: "reset-card.png",
+    image: "resetbillede.png",
     to: "/projekter/reset",
   },
 
@@ -41,7 +41,7 @@ const projects = [
     category: "CUSTOMER EXPERIENCE",
     description:
       "Et projekt med fokus på customer experience, research og udvikling af en sammenhængende digital brugeroplevelse.",
-    image: "north-card.png",
+    image: "north.png",
     to: "/projekter/north",
   },
 
@@ -51,7 +51,7 @@ const projects = [
     category: "UX & DIGITAL DESIGN",
     description:
       "Et projekt med fokus på at skabe en mere overskuelig og relevant digital oplevelse for centrets besøgende.",
-    image: "storcenter-card.png",
+    image: "centernord.png",
     to: "/projekter/storcenter-nord",
   },
 ];
