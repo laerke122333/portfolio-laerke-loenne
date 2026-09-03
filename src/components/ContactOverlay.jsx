@@ -190,7 +190,7 @@ export default function ContactOverlay({ open, onClose }) {
             {/* CTA KNAP */}
 
             <a href="mailto:laerke122333@icloud.com" className="contact-write">
-              Skriv til mig
+              Skriv til mig på mail
               <span>→</span>
             </a>
           </div>

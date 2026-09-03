@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Lottie } from "lottie-react";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -164,7 +165,7 @@ export default function Home({ onContact }) {
 
         <article className="about-card about-card-blue">
           <div className="about-card-icon">
-            <img src="/images/softskills.png" alt="Mig som person" />
+            <img src="/images/softskills.png" alt="Soft skills" />
           </div>
 
           <div className="about-card-content">
@@ -188,13 +189,17 @@ export default function Home({ onContact }) {
       </section>
 
       {/* =====================================================
-    PERSONLIGHEDSPROFIL
-====================================================== */}
+          PERSONLIGHEDSPROFIL
+      ====================================================== */}
 
       <section className="personality-section">
+        {/* IKON */}
+
         <div className="personality-icon">
           <img src="/images/personlighedprofil.png" alt="Personlighedsprofil" />
         </div>
+
+        {/* TEKST */}
 
         <div className="personality-text">
           <h2>PERSONLIGHEDSPROFIL</h2>
@@ -218,13 +223,17 @@ export default function Home({ onContact }) {
       </section>
 
       {/* =====================================================
-    MIG SOM PERSON
-====================================================== */}
+          MIG SOM PERSON
+      ====================================================== */}
 
       <section className="person-section">
+        {/* IKON */}
+
         <div className="person-icon">
           <img src="/images/migsomperson.png" alt="Mig som person" />
         </div>
+
+        {/* TEKST */}
 
         <div className="person-text">
           <h2>MIG SOM PERSON</h2>
@@ -245,8 +254,24 @@ export default function Home({ onContact }) {
           <p>Jeg har også været frivillig på en pigegolfcamp i Himmerland.</p>
         </div>
 
-        <div className="personality-photo">
-          <img src="/images/golfbillede.png" alt="Lærke" />
+      
+      </section>
+
+      {/* =====================================================
+          LOTTIE ANIMATION
+          LIGGER DIREKTE UNDER "MIG SOM PERSON"
+      ====================================================== */}
+
+      <section className="home-lottie-section">
+        <div className="home-lottie-decoration">✳</div>
+
+        <div className="home-lottie-wrapper">
+          <Lottie
+            src="/lottie/Scene.json"
+            autoplay
+            loop
+            className="home-lottie-animation"
+          />
         </div>
       </section>
 

@@ -565,7 +565,7 @@
   border-radius: 50%;
 
   background:
-    rgba(213, 231, 252, 0.65);
+    #F7C8D3;
 
   transform:
     rotate(-10deg);
@@ -581,7 +581,7 @@
 
   z-index: 4;
 
-  color: #88afe0;
+  color: #B46A72;
 
   line-height: 1;
 
@@ -605,44 +605,7 @@
 }
 
 
-/* =========================================================
-   PRIKKER
-========================================================= */
 
-.contact-dots {
-  position: absolute;
-
-  z-index: 4;
-
-  display: grid;
-
-  grid-template-columns:
-    repeat(3, 6px);
-
-  gap: 12px;
-}
-
-
-.contact-dots span {
-  width: 6px;
-  height: 6px;
-
-  border-radius: 50%;
-
-  background: #9cbce5;
-}
-
-
-.contact-dots-top {
-  top: 40px;
-  left: 38px;
-}
-
-
-.contact-dots-bottom {
-  right: 40px;
-  bottom: 75px;
-}
 
 
 /* =========================================================
