@@ -1,0 +1,1698 @@
+/* =========================================================
+   MELLEMRUM
+========================================================= */
+
+.mellemrum-page {
+  width: 100%;
+
+  overflow-x: hidden;
+
+  background: #ffffff;
+
+  color: #173653;
+}
+
+
+/* =========================================================
+   FÆLLES CONTAINER
+========================================================= */
+
+.mellemrum-container {
+  position: relative;
+
+  z-index: 5;
+
+  width: min(1200px, 88%);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.mellemrum-hero {
+  position: relative;
+
+  min-height: 720px;
+
+  padding:
+    42px 0
+    90px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f7fbff 0%,
+      #e8f2ff 55%,
+      #d8eaff 100%
+    );
+}
+
+
+/* BAGGRUNDSFORM */
+
+.mellemrum-hero-shape {
+  position: absolute;
+
+  right: -200px;
+  top: -350px;
+
+  width: 800px;
+  height: 800px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.35);
+}
+
+
+/* TILBAGE */
+
+.mellemrum-back {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 50px;
+
+  color: #557fae;
+
+  text-decoration: none;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  transition:
+    gap 0.25s ease;
+}
+
+
+.mellemrum-back:hover {
+  gap: 14px;
+}
+
+
+/* HERO GRID */
+
+.mellemrum-hero-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.85fr)
+    minmax(0, 1.15fr);
+
+  align-items: center;
+
+  gap: 65px;
+}
+
+
+/* CATEGORY */
+
+.mellemrum-category {
+  margin:
+    0 0
+    13px;
+
+  color: #6897cd;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.3px;
+}
+
+
+/* HERO TITLE */
+
+.mellemrum-hero-text h1 {
+  margin: 0;
+
+  color: #173a5e;
+
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
+
+  font-size:
+    clamp(
+      75px,
+      8vw,
+      125px
+    );
+
+  line-height: 0.9;
+
+  font-weight: 500;
+
+  letter-spacing: 2px;
+}
+
+
+/* HÅNDSKRIFT */
+
+.mellemrum-script {
+  margin:
+    7px 0
+    40px 25px;
+
+  color: #7fa8dc;
+
+  font-family:
+    "Brush Script MT",
+    "Segoe Script",
+    cursive;
+
+  font-size:
+    clamp(
+      35px,
+      4vw,
+      53px
+    );
+
+  line-height: 1;
+
+  transform:
+    rotate(-3deg);
+}
+
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+.mellemrum-note {
+  position: relative;
+
+  width: min(380px, 95%);
+
+  padding:
+    37px
+    32px
+    30px;
+
+  background: #fffaf1;
+
+  transform:
+    rotate(-2deg);
+
+  box-shadow:
+    0 15px 35px
+    rgba(46, 74, 102, 0.12);
+}
+
+
+.mellemrum-note p {
+  margin: 0;
+
+  color: #283c50;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+.mellemrum-note-tape {
+  position: absolute;
+
+  top: -15px;
+  left: 50%;
+
+  width: 125px;
+  height: 34px;
+
+  transform:
+    translateX(-50%)
+    rotate(5deg);
+
+  background:
+    rgba(
+      225,
+      202,
+      160,
+      0.8
+    );
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.mellemrum-hero-image-area {
+  position: relative;
+
+  min-width: 0;
+
+  min-height: 470px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+
+.mellemrum-image-blob {
+  position: absolute;
+
+  width: min(550px, 100%);
+  height: 420px;
+
+  border-radius:
+    45% 55% 53% 47% /
+    47% 47% 53% 53%;
+
+  background:
+    linear-gradient(
+      145deg,
+      #b9d5f5,
+      #dbeaff
+    );
+
+  transform:
+    rotate(-5deg);
+}
+
+
+/* BROWSER */
+
+.mellemrum-browser {
+  position: relative;
+
+  z-index: 5;
+
+  width: min(590px, 100%);
+
+  overflow: hidden;
+
+  border:
+    10px solid
+    #ffffff;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  transform:
+    rotate(2deg);
+
+  box-shadow:
+    0 25px 55px
+    rgba(
+      39,
+      67,
+      99,
+      0.18
+    );
+}
+
+
+/* BROWSER TOP */
+
+.mellemrum-browser-top {
+  height: 40px;
+
+  padding:
+    0 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  background: #f4f6f8;
+}
+
+
+.browser-dots {
+  display: flex;
+
+  gap: 5px;
+}
+
+
+.browser-dots span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #a9b8c6;
+}
+
+
+.browser-address {
+  width: 55%;
+
+  padding:
+    5px 12px;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #81909e;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 9px;
+}
+
+
+.mellemrum-hero-video {
+  width: 100%;
+  height: 390px;
+
+  display: block;
+
+  object-fit: cover;
+
+  background: #ffffff;
+}
+
+
+/* PIL */
+
+.mellemrum-arrow {
+  position: absolute;
+
+  z-index: 7;
+
+  right: 0;
+  bottom: 0;
+
+  color: #6f9fd5;
+
+  font-size: 65px;
+
+  transform:
+    rotate(-15deg);
+}
+
+
+/* HERO DOTS */
+
+.mellemrum-hero-dots {
+  position: absolute;
+
+  left: 3%;
+  bottom: 55px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 5px);
+
+  gap: 11px;
+}
+
+
+.mellemrum-hero-dots span {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #90b4df;
+}
+
+
+.mellemrum-hero-star {
+  position: absolute;
+
+  top: 30%;
+  left: 3%;
+
+  color: #8fb5e1;
+
+  font-size: 50px;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.mellemrum-section-heading {
+  text-align: center;
+}
+
+
+.mellemrum-section-heading > p:first-child {
+  margin:
+    0 0
+    10px;
+
+  color: #729dd0;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 10px;
+
+  font-weight: bold;
+
+  letter-spacing: 1.2px;
+}
+
+
+.mellemrum-section-heading h2 {
+  margin: 0;
+
+  color: #173653;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size:
+    clamp(
+      36px,
+      5vw,
+      54px
+    );
+}
+
+
+/* =========================================================
+   OVERVIEW
+========================================================= */
+
+.mellemrum-overview {
+  width: min(1100px, 88%);
+
+  margin: 0 auto;
+
+  padding:
+    100px 0
+    120px;
+}
+
+
+.mellemrum-overview-grid {
+  margin-top: 55px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+
+.mellemrum-overview-card {
+  min-height: 140px;
+
+  padding: 27px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  border:
+    1px solid
+    #e3edf8;
+
+  border-radius: 19px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 25px
+    rgba(
+      47,
+      76,
+      108,
+      0.07
+    );
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.mellemrum-overview-card:hover {
+  transform:
+    translateY(-5px);
+
+  box-shadow:
+    0 17px 32px
+    rgba(
+      47,
+      76,
+      108,
+      0.12
+    );
+}
+
+
+.mellemrum-overview-icon {
+  width: 56px;
+  height: 56px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #e5f0fd;
+
+  color: #5283ba;
+
+  font-size: 21px;
+}
+
+
+.mellemrum-overview-card span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #799bc3;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 9px;
+
+  font-weight: bold;
+
+  letter-spacing: 0.8px;
+}
+
+
+.mellemrum-overview-card h3 {
+  margin: 0;
+
+  color: #173653;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.mellemrum-about {
+  position: relative;
+
+  width: min(1100px, 88%);
+
+  margin:
+    0 auto
+    120px;
+
+  padding:
+    70px
+    75px;
+
+  display: grid;
+
+  grid-template-columns:
+    0.8fr
+    1.2fr;
+
+  gap: 70px;
+
+  overflow: hidden;
+
+  border-radius: 32px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #dbeafd,
+      #edf6ff
+    );
+}
+
+
+.mellemrum-about-heading,
+.mellemrum-about-text {
+  position: relative;
+
+  z-index: 5;
+}
+
+
+.mellemrum-about-heading > p {
+  margin:
+    0 0
+    10px;
+
+  color: #688fbe;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 10px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+
+.mellemrum-about-heading h2 {
+  margin: 0;
+
+  color: #173653;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size:
+    clamp(
+      38px,
+      5vw,
+      58px
+    );
+
+  line-height: 0.95;
+}
+
+
+.mellemrum-about-text p {
+  margin:
+    0 0
+    18px;
+
+  color: #293f55;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+}
+
+
+.mellemrum-about-text p:last-child {
+  margin-bottom: 0;
+}
+
+
+.mellemrum-about-star {
+  position: absolute;
+
+  left: 27px;
+  bottom: 23px;
+
+  color: #8eb3df;
+
+  font-size: 60px;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.mellemrum-features {
+  width: min(1150px, 88%);
+
+  margin: 0 auto;
+
+  padding:
+    20px 0
+    130px;
+}
+
+
+.mellemrum-heading-description {
+  max-width: 500px;
+
+  margin:
+    18px auto 0;
+
+  color: #63707e;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* FEATURE ROW */
+
+.mellemrum-feature {
+  margin-top: 80px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.15fr
+    0.85fr;
+
+  gap: 75px;
+
+  align-items: center;
+}
+
+
+.mellemrum-feature-reverse
+.mellemrum-feature-image {
+  order: 2;
+}
+
+
+.mellemrum-feature-reverse
+.mellemrum-feature-text {
+  order: 1;
+}
+
+
+/* FEATURE IMAGE */
+
+.mellemrum-feature-image {
+  position: relative;
+
+  padding: 12px;
+
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 20px 45px
+    rgba(
+      39,
+      67,
+      96,
+      0.12
+    );
+}
+
+
+.mellemrum-feature-image img {
+  width: 100%;
+
+  display: block;
+
+  border-radius: 15px;
+}
+
+
+.feature-tape {
+  position: absolute;
+
+  top: -17px;
+  left: 50%;
+
+  width: 130px;
+  height: 34px;
+
+  background:
+    rgba(
+      225,
+      202,
+      160,
+      0.77
+    );
+
+  transform:
+    translateX(-50%)
+    rotate(5deg);
+}
+
+
+/* FEATURE TEXT */
+
+.mellemrum-feature-text {
+  position: relative;
+}
+
+
+.feature-number {
+  display: block;
+
+  margin-bottom: 14px;
+
+  color: #a2bad7;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 16px;
+}
+
+
+.feature-label {
+  margin:
+    0 0
+    8px;
+
+  color: #729dd0;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 9px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+
+.mellemrum-feature-text h3 {
+  margin:
+    0 0
+    22px;
+
+  color: #173653;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size:
+    clamp(
+      26px,
+      3vw,
+      38px
+    );
+
+  line-height: 1.15;
+}
+
+
+.mellemrum-feature-text p:not(.feature-label) {
+  margin:
+    0 0
+    17px;
+
+  color: #4d5d6d;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.mellemrum-process {
+  width: min(1200px, 90%);
+
+  margin: 0 auto;
+
+  padding:
+    20px 0
+    140px;
+}
+
+
+.mellemrum-process-grid {
+  margin-top: 65px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    40px
+    1fr
+    40px
+    1fr
+    40px
+    1fr
+    40px
+    1fr;
+
+  align-items: start;
+}
+
+
+.mellemrum-process-step {
+  text-align: center;
+}
+
+
+.process-step-number {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #9eb7d4;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 12px;
+}
+
+
+.process-step-icon {
+  width: 70px;
+  height: 70px;
+
+  margin:
+    0 auto
+    18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e5f0fc;
+
+  color: #4e82bb;
+
+  font-size: 22px;
+}
+
+
+.mellemrum-process-step h3 {
+  margin:
+    0 0
+    9px;
+
+  color: #173653;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+}
+
+
+.mellemrum-process-step p {
+  max-width: 150px;
+
+  margin: 0 auto;
+
+  color: #657180;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+
+.process-connector {
+  margin-top: 55px;
+
+  text-align: center;
+
+  color: #9eb8d7;
+
+  font-size: 25px;
+}
+
+
+/* =========================================================
+   RESULTS
+========================================================= */
+
+.mellemrum-results {
+  position: relative;
+
+  width: min(1200px, 92%);
+
+  margin:
+    0 auto
+    120px;
+
+  padding:
+    80px
+    70px;
+
+  overflow: hidden;
+
+  border-radius: 36px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #e6f1ff,
+      #f7fbff
+    );
+}
+
+
+.mellemrum-result-shape {
+  position: absolute;
+
+  top: -300px;
+  right: -200px;
+
+  width: 520px;
+  height: 520px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(
+      180,
+      211,
+      247,
+      0.3
+    );
+}
+
+
+.mellemrum-results-script {
+  margin:
+    3px 0 0;
+
+  color: #7fa8dc;
+
+  font-family:
+    "Brush Script MT",
+    "Segoe Script",
+    cursive;
+
+  font-size:
+    clamp(
+      28px,
+      3vw,
+      40px
+    );
+
+  transform:
+    rotate(-2deg);
+}
+
+
+.mellemrum-results-grid {
+  position: relative;
+
+  z-index: 5;
+
+  margin-top: 55px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+
+.mellemrum-result-card {
+  min-height: 220px;
+
+  padding:
+    34px
+    30px;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 12px 30px
+    rgba(
+      48,
+      77,
+      108,
+      0.08
+    );
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+.mellemrum-result-card:hover {
+  transform:
+    translateY(-6px);
+}
+
+
+.mellemrum-result-icon {
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 22px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #e4f0fd;
+
+  color: #4f82bb;
+
+  font-size: 19px;
+}
+
+
+.mellemrum-result-card h3 {
+  margin:
+    0 0
+    12px;
+
+  color: #173653;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 18px;
+}
+
+
+.mellemrum-result-card p {
+  margin: 0;
+
+  color: #586575;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   LEARNING
+========================================================= */
+
+.mellemrum-learning {
+  position: relative;
+
+  width: min(1050px, 88%);
+
+  margin:
+    0 auto
+    120px;
+
+  padding:
+    60px
+    65px;
+
+  display: grid;
+
+  grid-template-columns:
+    0.85fr
+    1.15fr;
+
+  gap: 70px;
+
+  overflow: hidden;
+
+  border-radius: 30px;
+
+  background: #fffaf3;
+}
+
+
+.learning-small-title {
+  margin:
+    0 0
+    8px;
+
+  color: #7c9fc6;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 10px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+
+.mellemrum-learning h2 {
+  margin: 0;
+
+  color: #173653;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      30px,
+      4vw,
+      45px
+    );
+
+  font-weight: 500;
+}
+
+
+.learning-text p {
+  margin:
+    0 0
+    18px;
+
+  color: #4e5d6c;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.75;
+}
+
+
+.learning-decoration {
+  position: absolute;
+
+  right: 25px;
+  bottom: 20px;
+
+  color: #aac3df;
+
+  font-size: 48px;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.mellemrum-bottom {
+  width: min(850px, 88%);
+
+  margin: 0 auto;
+
+  padding:
+    10px 0
+    130px;
+
+  text-align: center;
+}
+
+
+.mellemrum-bottom > p {
+  margin:
+    0 0
+    10px;
+
+  color: #729dd0;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 10px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+
+.mellemrum-bottom h2 {
+  margin:
+    0 0
+    28px;
+
+  color: #173653;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      31px,
+      4vw,
+      45px
+    );
+
+  font-weight: 500;
+}
+
+
+.mellemrum-bottom-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding:
+    14px
+    26px;
+
+  border-radius: 30px;
+
+  background: #709cd2;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.mellemrum-bottom-button:hover {
+  transform:
+    translateY(-3px);
+
+  box-shadow:
+    0 12px 25px
+    rgba(
+      68,
+      108,
+      155,
+      0.22
+    );
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .mellemrum-hero-grid {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+
+  .mellemrum-overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .mellemrum-about {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+
+  .mellemrum-feature {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+
+  .mellemrum-feature-reverse
+  .mellemrum-feature-image,
+  .mellemrum-feature-reverse
+  .mellemrum-feature-text {
+    order: initial;
+  }
+
+
+  .mellemrum-process-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+
+    gap: 45px;
+  }
+
+
+  .process-connector {
+    display: none;
+  }
+
+
+  .mellemrum-results-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================================
+   MOBIL
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .mellemrum-hero {
+    min-height: auto;
+
+    padding:
+      30px 0
+      70px;
+  }
+
+
+  .mellemrum-container {
+    width: 86%;
+  }
+
+
+  .mellemrum-back {
+    margin-bottom: 35px;
+
+    font-size: 11px;
+  }
+
+
+  .mellemrum-hero-text h1 {
+    font-size: 65px;
+  }
+
+
+  .mellemrum-script {
+    margin-left: 10px;
+
+    font-size: 36px;
+  }
+
+
+  .mellemrum-note {
+    width: 100%;
+  }
+
+
+  .mellemrum-hero-image-area {
+    min-height: 300px;
+  }
+
+
+  .mellemrum-image-blob {
+    height: 270px;
+  }
+
+
+  .mellemrum-browser {
+    border-width: 7px;
+
+    border-radius: 14px;
+  }
+
+
+  .mellemrum-browser-top {
+    height: 30px;
+  }
+
+
+  .mellemrum-overview {
+    width: 86%;
+
+    padding:
+      75px 0
+      90px;
+  }
+
+
+  .mellemrum-about {
+    width: 90%;
+
+    margin-bottom: 90px;
+
+    padding:
+      48px
+      27px;
+
+    border-radius: 25px;
+  }
+
+
+  .mellemrum-features {
+    width: 86%;
+
+    padding-bottom: 100px;
+  }
+
+
+  .mellemrum-feature {
+    margin-top: 60px;
+  }
+
+
+  .mellemrum-process {
+    width: 86%;
+
+    padding-bottom: 100px;
+  }
+
+
+  .mellemrum-process-grid {
+    grid-template-columns: 1fr;
+
+    gap: 42px;
+  }
+
+
+  .mellemrum-results {
+    width: 92%;
+
+    margin-bottom: 90px;
+
+    padding:
+      55px
+      24px;
+
+    border-radius: 27px;
+  }
+
+
+  .mellemrum-learning {
+    width: 90%;
+
+    margin-bottom: 90px;
+
+    padding:
+      45px
+      27px;
+
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+
+  .mellemrum-bottom {
+    padding-bottom: 90px;
+  }
+
+}
+
+.mellemrum-hero-video {
+  width: 100%;
+  height: 390px;
+
+  display: block;
+
+  object-fit: contain;
+
+  background: #ffffff;
+}

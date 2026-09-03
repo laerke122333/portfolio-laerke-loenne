@@ -4,6 +4,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 
+import Mellemrum from "./pages/Mellemrum";
 import Reset from "./pages/Reset";
 import North from "./pages/North";
 import Spilcafe from "./pages/Spilcafe";
@@ -36,30 +37,30 @@ export default function App() {
   const [contactOpen, setContactOpen] = useState(false);
 
   /* =====================================
-     STOP SCROLL BAG KONTAKT OVERLAY
+     LÅS SCROLL NÅR KONTAKT ER ÅBEN
   ===================================== */
 
-useEffect(() => {
-  if (contactOpen) {
-    document.documentElement.style.overflow = "hidden";
-    document.body.style.overflow = "hidden";
-  } else {
-    document.documentElement.style.overflow = "";
-    document.body.style.overflow = "";
-  }
+  useEffect(() => {
+    if (contactOpen) {
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+    } else {
+      document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+    }
 
-  return () => {
-    document.documentElement.style.overflow = "";
-    document.body.style.overflow = "";
-  };
-}, [contactOpen]);
+    return () => {
+      document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+    };
+  }, [contactOpen]);
 
   return (
     <>
       <ScrollHandler />
 
       {/* =====================================
-          ROUTES
+          ALLE ROUTES SKAL VÆRE HERINDE
       ===================================== */}
 
       <Routes>
@@ -70,11 +71,18 @@ useEffect(() => {
           element={<Home onContact={() => setContactOpen(true)} />}
         />
 
-        {/* PROJEKTER OVERSIGT */}
+        {/* PROJEKT OVERSIGT */}
 
         <Route
           path="/projekter"
           element={<Projects onContact={() => setContactOpen(true)} />}
+        />
+
+        {/* MELLEMRUM */}
+
+        <Route
+          path="/projekter/mellemrum"
+          element={<Mellemrum onContact={() => setContactOpen(true)} />}
         />
 
         {/* RESET */}

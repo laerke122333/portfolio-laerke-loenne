@@ -6,16 +6,27 @@ import Footer from "../components/Footer";
 const projects = [
   {
     number: "01",
-    title: "RESET APP",
-    category: "UX/UI & FRONTEND",
+    title: "MELLEMRUM",
+    category: "UX/UI · REACT · SUPABASE",
     description:
-      "Selvvalgt eksamensopgave med fokus på at hjælpe husstanden med at holde styr på pligter, ansvar og point.",
-    image: "resetbillede.png",
-    to: "/projekter/reset",
+      "En digital eventplatform, hvor brugere kan finde arrangementer, tilmelde sig og selv oprette events.",
+    image: "mellemrum-hero.png",
+    to: "/projekter/mellemrum",
+    latest: true,
   },
 
   {
     number: "02",
+    title: "RESET APP",
+    category: "UX/UI & FRONTEND",
+    description:
+      "Selvvalgt eksamensopgave med fokus på at hjælpe husstanden med at holde styr på pligter og ansvar.",
+    image: "reset-card.png",
+    to: "/projekter/reset",
+  },
+
+  {
+    number: "03",
     title: "SPILCAFÉ",
     category: "UX/UI DESIGN",
     description:
@@ -25,22 +36,22 @@ const projects = [
   },
 
   {
-    number: "03",
+    number: "04",
     title: "NORTH",
     category: "CUSTOMER EXPERIENCE",
     description:
-      "En strikwebshop med fokus på customer experience, tydelig information og en enkel shoppingoplevelse.",
-    image: "north.png",
+      "Et projekt med fokus på customer experience, research og udvikling af en sammenhængende digital brugeroplevelse.",
+    image: "north-card.png",
     to: "/projekter/north",
   },
 
   {
-    number: "04",
+    number: "05",
     title: "STORCENTER NORD",
-    category: "UX/UI & DIGITAL LØSNING",
+    category: "UX & DIGITAL DESIGN",
     description:
-      "Et projekt med fokus på at skabe en mere overskuelig og relevant digital oplevelse for Storcenter Nords besøgende.",
-    image: "centernord.png",
+      "Et projekt med fokus på at skabe en mere overskuelig og relevant digital oplevelse for centrets besøgende.",
+    image: "storcenter-card.png",
     to: "/projekter/storcenter-nord",
   },
 ];
@@ -85,8 +96,6 @@ export default function Projects({ onContact }) {
 
             <h2>Design der skaber værdi.</h2>
           </div>
-
-         
         </div>
 
         <div className="projects-grid">
@@ -97,11 +106,14 @@ export default function Projects({ onContact }) {
               key={project.title}
             >
               <div className="project-overview-image">
+                {project.latest && (
+                  <span className="latest-project-badge">NYESTE PROJEKT</span>
+                )}
+
                 <span className="project-number">{project.number}</span>
 
                 <img src={`/images/${project.image}`} alt={project.title} />
               </div>
-
               <div className="project-overview-info">
                 <p className="project-overview-category">{project.category}</p>
 
