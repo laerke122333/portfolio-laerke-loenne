@@ -1,0 +1,550 @@
+/* =========================================================
+   PROJECTS PAGE
+========================================================= */
+
+.projects-page {
+  width: 100%;
+  overflow-x: hidden;
+
+  background: #ffffff;
+
+  color: #142b46;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.projects-hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 480px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8fbff 0%,
+      #edf5ff 48%,
+      #dcecff 100%
+    );
+}
+
+
+/* STOR ORGANISK CIRKEL */
+
+.projects-hero-circle {
+  position: absolute;
+
+  top: -330px;
+  right: -120px;
+
+  width: 780px;
+  height: 780px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.4);
+}
+
+
+/* HERO CONTENT */
+
+.projects-hero-content {
+  position: relative;
+  z-index: 5;
+
+  width: min(1200px, 88%);
+
+  margin: 0 auto;
+}
+
+
+.projects-overline {
+  margin: 0 0 12px;
+
+  color: #6e9dd6;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+
+.projects-hero h1 {
+  margin: 0;
+
+  color: #477bad;
+
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
+
+  font-size:
+    clamp(80px, 10vw, 145px);
+
+  line-height: 0.85;
+
+  font-weight: 500;
+
+  letter-spacing: 2px;
+}
+
+
+.projects-handwriting {
+  margin: 6px 0 30px;
+
+  color: #8bb3e8;
+
+  font-family:
+    "Brush Script MT",
+    "Segoe Script",
+    cursive;
+
+  font-size:
+    clamp(38px, 4vw, 58px);
+
+  line-height: 1;
+
+  transform:
+    rotate(-2deg);
+}
+
+
+.projects-intro {
+  width: 520px;
+  max-width: 100%;
+
+  margin: 0;
+
+  color: #25384d;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+.projects-hero-star {
+  position: absolute;
+
+  right: 12%;
+  bottom: 45px;
+
+  color: #83ace0;
+
+  font-size: 80px;
+
+  z-index: 3;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.projects-content {
+  width: 100%;
+
+  padding:
+    90px 0 130px;
+}
+
+
+.projects-content-heading {
+  width: min(1200px, 88%);
+
+  margin: 0 auto 55px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 60px;
+
+  align-items: end;
+}
+
+
+.projects-content-heading > div > p {
+  margin: 0 0 10px;
+
+  color: #7099ce;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  letter-spacing: 0.8px;
+}
+
+
+.projects-content-heading h2 {
+  margin: 0;
+
+  color: #173252;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 43px;
+}
+
+
+.projects-heading-text {
+  max-width: 430px;
+
+  margin: 0;
+
+  color: #394653;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.projects-grid {
+  width: min(1200px, 88%);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 28px;
+}
+
+
+/* =========================================================
+   PROJECT CARD
+========================================================= */
+
+.project-overview-card {
+  overflow: hidden;
+
+  display: block;
+
+  background:
+    #f5f9ff;
+
+  border-radius: 22px;
+
+  color: #142b46;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 6px 22px
+    rgba(50, 85, 128, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.project-overview-card:hover {
+  transform:
+    translateY(-8px);
+
+  box-shadow:
+    0 20px 40px
+    rgba(50, 85, 128, 0.15);
+}
+
+
+/* =========================================================
+   BILLEDE
+========================================================= */
+
+.project-overview-image {
+  position: relative;
+
+  width: 100%;
+  height: 330px;
+
+  overflow: hidden;
+
+  background: #e7f1fd;
+}
+
+
+.project-overview-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition:
+    transform 0.5s ease;
+}
+
+
+.project-overview-card:hover
+.project-overview-image img {
+  transform:
+    scale(1.05);
+}
+
+
+/* NUMMER */
+
+.project-number {
+  position: absolute;
+
+  z-index: 5;
+
+  top: 22px;
+  left: 22px;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.9);
+
+  color: #4f79aa;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  box-shadow:
+    0 4px 12px
+    rgba(42, 76, 119, 0.1);
+}
+
+
+/* =========================================================
+   TEKST
+========================================================= */
+
+.project-overview-info {
+  position: relative;
+
+  min-height: 210px;
+
+  padding:
+    28px 85px 30px 30px;
+}
+
+
+.project-overview-category {
+  margin:
+    0 0 9px;
+
+  color: #729cd1;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  letter-spacing: 0.8px;
+}
+
+
+.project-overview-info h2 {
+  margin:
+    0 0 13px;
+
+  color: #173252;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 27px;
+}
+
+
+.project-overview-description {
+  margin: 0;
+
+  color: #34414e;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+
+/* PIL */
+
+.project-overview-arrow {
+  position: absolute;
+
+  right: 25px;
+  bottom: 30px;
+
+  width: 46px;
+  height: 46px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: #dcecff;
+
+  color: #315a88;
+
+  font-size: 23px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+
+.project-overview-card:hover
+.project-overview-arrow {
+  transform:
+    translateX(5px);
+
+  background:
+    #c5defa;
+}
+
+
+/* =========================================================
+   MOBIL
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .projects-hero {
+    min-height: 420px;
+  }
+
+
+  .projects-hero-content {
+    width: 86%;
+  }
+
+
+  .projects-hero h1 {
+    font-size: 72px;
+  }
+
+
+  .projects-handwriting {
+    font-size: 37px;
+  }
+
+
+  .projects-intro {
+    font-size: 13px;
+  }
+
+
+  .projects-hero-star {
+    right: 5%;
+
+    font-size: 50px;
+  }
+
+
+  .projects-content {
+    padding:
+      70px 0 100px;
+  }
+
+
+  .projects-content-heading {
+    width: 86%;
+
+    grid-template-columns:
+      1fr;
+
+    gap: 20px;
+  }
+
+
+  .projects-content-heading h2 {
+    font-size: 34px;
+  }
+
+
+  .projects-grid {
+    width: 86%;
+
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .project-overview-image {
+    height: 250px;
+  }
+
+
+  .project-overview-info {
+    min-height: 200px;
+
+    padding:
+      25px 70px 26px 25px;
+  }
+
+}

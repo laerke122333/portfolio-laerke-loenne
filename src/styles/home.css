@@ -1,0 +1,1443 @@
+/* =========================================================
+   FORSIDE
+========================================================= */
+
+.home-page {
+  width: 100%;
+
+  overflow-x: hidden;
+
+  background: #ffffff;
+
+  color: #142b46;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.portfolio-hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 720px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8fbff 0%,
+      #edf5ff 42%,
+      #dcecff 100%
+    );
+}
+
+
+/* STOR CIRKEL I BAGGRUND */
+
+.hero-background-circle {
+  position: absolute;
+
+  top: -260px;
+  right: -150px;
+
+  width: 900px;
+  height: 900px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.36);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.45);
+}
+
+
+/* =========================================================
+   NAV
+========================================================= */
+
+.portfolio-header {
+  position: relative;
+  z-index: 30;
+
+  width: min(1320px, 90%);
+  height: 90px;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.portfolio-logo {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  color: #13273e;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+.logo-star {
+  color: #82abe0;
+
+  font-size: 38px;
+
+  line-height: 1;
+}
+
+
+.portfolio-nav {
+  display: flex;
+  align-items: center;
+
+  gap: 42px;
+}
+
+
+.portfolio-nav a {
+  color: #13273e;
+
+  text-decoration: none;
+
+  font-size: 14px;
+}
+
+
+.portfolio-nav a:hover {
+  text-decoration: underline;
+
+  text-underline-offset: 5px;
+}
+
+
+.portfolio-nav button {
+  padding: 11px 24px;
+
+  border-radius: 40px;
+
+  background: #739ed5;
+
+  color: white;
+
+  border: 0;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.portfolio-nav button:hover {
+  transform: translateY(-2px);
+
+  background: #5d8bc6;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+
+  width: min(1320px, 90%);
+  min-height: 620px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    0.9fr 1.1fr;
+
+  align-items: center;
+
+  column-gap: 70px;
+}
+
+
+/* =========================================================
+   HERO TEKST
+========================================================= */
+
+.hero-text {
+  position: relative;
+
+  z-index: 15;
+
+  padding-bottom: 50px;
+}
+
+
+.hero-text h1 {
+  margin: 0;
+
+  color: #4778ad;
+
+  font-family:
+    Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
+
+  font-size: clamp(80px, 9vw, 145px);
+
+  line-height: 0.84;
+
+  letter-spacing: 2px;
+
+  font-weight: 500;
+}
+
+
+.hero-script {
+  margin:
+    8px 0 45px;
+
+  color: #8bb2e6;
+
+  font-family:
+    "Brush Script MT",
+    "Segoe Script",
+    cursive;
+
+  font-size: clamp(38px, 4vw, 62px);
+
+  line-height: 1;
+
+  transform: rotate(-3deg);
+}
+
+
+.hero-description {
+  width: 400px;
+  max-width: 100%;
+}
+
+
+.hero-description p {
+  margin:
+    0 0 22px;
+
+  color: #101b29;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   HERO KNAPPER
+========================================================= */
+
+.hero-buttons {
+  margin-top: 40px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 35px;
+}
+
+
+.primary-button {
+  min-width: 170px;
+
+  padding:
+    13px 22px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 35px;
+
+  background: #739ed5;
+
+  color: white;
+
+  border-radius: 40px;
+
+  text-decoration: none;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.primary-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px
+    rgba(70, 111, 165, 0.23);
+}
+
+
+.secondary-button {
+  padding-bottom: 4px;
+
+  color: #17293e;
+
+  border-bottom:
+    1px solid #6c96c9;
+
+  text-decoration: none;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   HERO FOTO
+========================================================= */
+
+/* =========================================================
+   HERO FOTO / KORT
+========================================================= */
+
+.hero-photo {
+  position: relative;
+
+  z-index: 12;
+
+  justify-self: end;
+
+  width: min(480px, 100%);
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  overflow: visible;
+}
+
+
+/* BAGGRUNDSKORT BAG BILLEDET */
+
+.hero-photo::before {
+  content: "";
+
+  position: absolute;
+
+  z-index: 1;
+
+  left: 8%;
+  right: 5%;
+  top: 5%;
+  bottom: 4%;
+
+  background:
+    linear-gradient(
+      145deg,
+      #a8c1f1 0%,
+      #edf5ff 100%
+    );
+
+  border-radius: 18px;
+
+  transform: rotate(3deg);
+
+  box-shadow:
+    0 15px 35px
+    rgba(62, 91, 125, 0.10);
+}
+
+
+/* PERSONEN */
+
+.hero-photo img {
+  position: relative;
+
+  z-index: 2;
+
+  width: 1000px;
+  height: 1000px;
+
+  object-fit: contain;
+  object-position: bottom center;
+
+  display: block;
+}
+
+
+/* TAPE */
+
+.hero-tape {
+  position: absolute;
+
+  z-index: 4;
+
+  top: 1%;
+  left: 50%;
+
+  width: 145px;
+  height: 42px;
+
+  background:
+    rgba(225, 202, 160, 0.68);
+
+  transform:
+    translateX(-50%)
+    rotate(8deg);
+}
+
+
+/* =========================================================
+   DESIGN REPEAT
+========================================================= */
+
+.design-repeat {
+  position: absolute;
+
+  z-index: 20;
+
+  top: 250px;
+  left: 48%;
+
+  display: flex;
+  flex-direction: column;
+
+  pointer-events: none;
+}
+
+
+.design-repeat span {
+  height: 64px;
+
+  color: transparent;
+
+  -webkit-text-stroke:
+    1px rgba(94, 141, 199, 0.35);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 68px;
+
+  line-height: 0.95;
+}
+
+
+/* STAR */
+
+.hero-decoration-star {
+  position: absolute;
+
+  z-index: 20;
+
+  left: 35%;
+  bottom: 70px;
+
+  color: #82abe0;
+
+  font-size: 85px;
+}
+
+
+/* DOTS */
+
+.hero-dots {
+  position: absolute;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 6px);
+
+  gap: 15px;
+}
+
+
+.hero-dots span {
+  width: 6px;
+  height: 6px;
+
+  background: #9fc0ea;
+
+  border-radius: 50%;
+}
+
+
+.hero-dots-left {
+  left: 16px;
+  bottom: 25px;
+}
+
+
+/* =========================================================
+   OM MIG INTRO
+========================================================= */
+
+.home-about {
+  position: relative;
+
+  width:
+    min(1200px, 88%);
+
+  margin:
+    0 auto;
+
+  padding:
+    90px 0 60px;
+
+  display: grid;
+
+  grid-template-columns:
+    360px 1fr;
+
+  gap: 75px;
+
+  align-items: center;
+}
+
+
+.home-about-image {
+  position: relative;
+
+  width: 100%;
+  height: 520px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+}
+
+.home-about-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  /* Flytter billedet op/ned inde i rammen */
+  object-position: center 72%;
+}
+
+.about-image-tape {
+  position: absolute;
+
+  z-index: 4;
+
+  left: -20px;
+  bottom: -10px;
+
+  width: 80px;
+  height: 26px;
+
+  background:
+    rgba(157, 190, 231, 0.75);
+
+  transform:
+    rotate(10deg);
+}
+
+
+.home-about-intro {
+  max-width: 620px;
+}
+
+
+.handwritten-title {
+  margin: 0;
+
+  color: #8ab0e2;
+
+  font-family:
+    "Brush Script MT",
+    "Segoe Script",
+    cursive;
+
+  font-size: 55px;
+
+  line-height: 1;
+
+  transform:
+    rotate(-4deg);
+}
+
+
+.home-about-intro h2 {
+  margin:
+    5px 0 25px;
+
+  color: #173252;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 52px;
+
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+
+.home-about-intro p {
+  max-width: 580px;
+
+  margin:
+    0 0 13px;
+
+  color: #17202b;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.65;
+}
+
+
+.home-about-decoration {
+  position: absolute;
+
+  right: -20px;
+  top: 40px;
+
+  color: #9bbce5;
+
+  font-size: 80px;
+}
+
+
+/* =========================================================
+   HARD + SOFT SKILLS
+========================================================= */
+
+.about-cards {
+  width:
+    min(1200px, 90%);
+
+  margin:
+    15px auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 25px;
+}
+
+
+.about-card {
+  min-height: 310px;
+
+  padding:
+    38px;
+
+  border-radius: 20px;
+
+  display: grid;
+
+  grid-template-columns:
+    90px 1fr;
+
+  gap: 28px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.about-card:hover {
+  transform:
+    translateY(-6px);
+
+  box-shadow:
+    0 15px 35px
+    rgba(55, 94, 140, 0.12);
+}
+
+
+.about-card-blue {
+  background:
+    linear-gradient(
+      135deg,
+      #f6faff,
+      #eaf3ff
+    );
+}
+
+
+.about-card-icon,
+.personality-icon,
+.person-icon {
+  width: 75px;
+  height: 75px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.about-card-icon img,
+.personality-icon img,
+.person-icon img {
+  width: 150%;
+  height: 150%;
+
+  max-width: none;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+.about-card-content h2,
+.personality-text h2,
+.person-text h2 {
+  margin: 0;
+
+  color: #173252;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 31px;
+
+  font-weight: 800;
+}
+
+
+.heading-line {
+  width: 70px;
+  height: 2px;
+
+  margin:
+    12px 0 22px;
+
+  background: #84aee1;
+}
+
+
+.about-card-content p,
+.personality-text p,
+.person-text p {
+  margin:
+    0 0 12px;
+
+  color: #1e2834;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.65;
+}
+
+
+/* TAGS */
+
+.skills-tags {
+  margin-top: 20px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+
+.skills-tags span {
+  padding:
+    7px 11px;
+
+  background:
+    rgba(255, 255, 255, 0.8);
+
+  border-radius: 20px;
+
+  color: #476e9f;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   PERSONLIGHEDSPROFIL
+========================================================= */
+
+.personality-section {
+  position: relative;
+
+  width:
+    min(1200px, 90%);
+
+  min-height: 285px;
+
+  margin:
+    25px auto;
+
+  padding:
+    35px 45px;
+
+  display: grid;
+
+  grid-template-columns:
+    80px 1fr 310px;
+
+  gap: 30px;
+
+  align-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f5faff,
+      #e7f2ff
+    );
+
+  border-radius: 20px;
+}
+
+
+.personality-photo {
+  width: 100%;
+  height: 215px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+}
+
+
+.personality-photo img {
+  width: 100%;
+  height: 350px;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+
+
+
+.personality-star {
+  position: absolute;
+
+  top: -8px;
+  right: 15px;
+
+ 
+
+  font-size: 60px;
+}
+
+
+/* =========================================================
+   MIG SOM PERSON
+========================================================= */
+
+.person-section {
+  width:
+    min(1200px, 90%);
+
+  margin:
+    25px auto 70px;
+
+  padding:
+    34px 45px;
+
+  display: grid;
+
+  grid-template-columns:
+    80px 1fr 1fr;
+
+  gap: 30px;
+
+  align-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fffdfa,
+      #faf5ee
+    );
+
+  border-radius: 20px;
+}
+
+
+.person-quote {
+  margin: 0;
+
+  color: #83a9d8;
+
+  font-family:
+    "Brush Script MT",
+    "Segoe Script",
+    cursive;
+
+  font-size: 25px;
+
+  line-height: 1.4;
+
+  transform:
+    rotate(-2deg);
+}
+
+
+.person-quote span {
+  font-size: 45px;
+}
+
+
+/* =========================================================
+   STYRKER
+========================================================= */
+
+.strengths-section {
+  width:
+    min(1200px, 90%);
+
+  margin:
+    0 auto;
+
+  padding:
+    50px 0 100px;
+}
+
+
+.section-small-title {
+  margin-bottom: 13px;
+
+  color: #739bd0;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 11px;
+
+  letter-spacing: 0.6px;
+
+  font-weight: 700;
+}
+
+
+.strengths-section > h2 {
+  margin:
+    0 0 45px;
+
+  color: #173252;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 40px;
+}
+
+
+.strengths-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 35px;
+}
+
+
+.strength-item {
+  display: grid;
+
+  grid-template-columns:
+    70px 1fr;
+
+  gap: 18px;
+
+  align-items: start;
+}
+
+
+.strength-icon {
+  width: 65px;
+  height: 65px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #dceafe;
+
+  color: #294f7a;
+
+  font-size: 28px;
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+.strength-item:hover
+.strength-icon {
+  transform:
+    scale(1.12)
+    rotate(-4deg);
+}
+
+
+.strength-item h3 {
+  margin:
+    5px 0 8px;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+}
+
+
+.strength-item p {
+  margin: 0;
+
+  color: #303946;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.55;
+}
+
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .hero-content {
+    grid-template-columns:
+      1fr 0.8fr;
+
+    gap: 30px;
+  }
+
+
+  .hero-photo {
+    height: 420px;
+  }
+
+
+  .design-repeat {
+    left: 44%;
+  }
+
+
+  .about-cards {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .personality-section {
+    grid-template-columns:
+      70px 1fr;
+
+    padding:
+      35px;
+  }
+
+
+  .personality-photo {
+    grid-column:
+      1 / -1;
+
+    height: 300px;
+  }
+
+
+  .strengths-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBIL
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .portfolio-hero {
+    min-height: 900px;
+  }
+
+
+  .portfolio-header {
+    width: 92%;
+    height: 75px;
+  }
+
+
+  .portfolio-logo {
+    gap: 8px;
+
+    font-size: 11px;
+  }
+
+
+  .logo-star {
+    font-size: 25px;
+  }
+
+
+  .portfolio-nav {
+    gap: 14px;
+  }
+
+
+  .portfolio-nav a,
+  .portfolio-nav button {
+    font-size: 10px;
+  }
+
+
+  .portfolio-nav button {
+    padding:
+      8px 12px;
+  }
+
+
+  .hero-content {
+    width: 86%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .hero-text {
+    width: 100%;
+
+    padding-top: 55px;
+  }
+
+
+  .hero-text h1 {
+    font-size: 76px;
+  }
+
+
+  .hero-script {
+    margin-bottom: 30px;
+
+    font-size: 38px;
+  }
+
+
+  .hero-description {
+    width: 100%;
+  }
+
+
+  .hero-description p {
+    font-size: 14px;
+  }
+
+
+  .hero-buttons {
+    margin-top: 28px;
+  }
+
+
+  .hero-photo {
+    width: 85%;
+    height: 350px;
+
+    margin:
+      45px auto 0;
+  }
+
+
+  .design-repeat {
+    display: none;
+  }
+
+
+  .hero-decoration-star {
+    display: none;
+  }
+
+
+  /* OM MIG */
+
+  .home-about {
+    width: 86%;
+
+    padding:
+      70px 0 50px;
+
+    grid-template-columns:
+      1fr;
+
+    gap: 40px;
+  }
+
+
+  .home-about-image {
+    width: 85%;
+
+    height: 300px;
+
+    margin: 0 auto;
+  }
+
+
+  .handwritten-title {
+    font-size: 45px;
+  }
+
+
+  .home-about-intro h2 {
+    font-size: 40px;
+  }
+
+
+  /* CARDS */
+
+  .about-cards {
+    width: 88%;
+  }
+
+
+  .about-card {
+    grid-template-columns:
+      65px 1fr;
+
+    gap: 18px;
+
+    padding: 28px 22px;
+  }
+
+
+  .about-card-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+
+  .about-card-content h2,
+  .personality-text h2,
+  .person-text h2 {
+    font-size: 23px;
+  }
+
+
+  /* PERSONALITY */
+
+  .personality-section {
+    width: 88%;
+
+    grid-template-columns:
+      60px 1fr;
+
+    gap: 20px;
+
+    padding:
+      28px 22px;
+  }
+
+
+  .personality-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+
+  .personality-photo {
+    height: 230px;
+  }
+
+
+  /* MIG SOM PERSON */
+
+  .person-section {
+    width: 88%;
+
+    grid-template-columns:
+      60px 1fr;
+
+    gap: 20px;
+
+    padding:
+      28px 22px;
+  }
+
+
+  .person-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+
+  .person-quote {
+    grid-column:
+      1 / -1;
+
+    padding-left: 80px;
+
+    font-size: 22px;
+  }
+
+
+  /* STYRKER */
+
+  .strengths-section {
+    width: 86%;
+
+    padding-bottom: 80px;
+  }
+
+
+  .strengths-grid {
+    grid-template-columns:
+      1fr;
+
+    gap: 30px;
+  }
+
+
+  /* PROJECTS */
+
+  .projects-heading {
+    width: 86%;
+
+    grid-template-columns:
+      1fr;
+
+    gap: 20px;
+  }
+
+
+  .projects-heading h2 {
+    font-size: 36px;
+  }
+
+
+  .projects-grid {
+    width: 86%;
+
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .modern-project-image {
+    height: 230px;
+  }
+
+}
+
+/* =========================================================
+   HOVER PÅ PERSONLIGHED + MIG SOM PERSON
+========================================================= */
+
+.personality-section,
+.person-section {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.personality-section:hover,
+.person-section:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 18px 40px
+    rgba(63, 100, 145, 0.12);
+}

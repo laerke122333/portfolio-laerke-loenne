@@ -1,0 +1,538 @@
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.portfolio-footer {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 390px;
+
+  padding:
+    75px 0 95px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8fbff 0%,
+      #eef6ff 48%,
+      #e1efff 100%
+    );
+
+  color: #142b46;
+}
+
+
+/* =========================================================
+   FOOTER INDHOLD
+========================================================= */
+
+.portfolio-footer-content {
+  position: relative;
+  z-index: 10;
+
+  width: min(1150px, 88%);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    1.1fr 1px 0.9fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   VENSTRE SIDE
+========================================================= */
+
+.footer-about {
+  max-width: 480px;
+}
+
+
+.footer-name {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 26px;
+}
+
+
+.footer-name h2 {
+  margin: 0;
+
+  color: #142b46;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 21px;
+
+  font-weight: 700;
+}
+
+
+.footer-name-star {
+  color: #79a6dc;
+
+  font-size: 42px;
+
+  line-height: 1;
+}
+
+
+.footer-about > p {
+  max-width: 400px;
+
+  margin: 0;
+
+  color: #27394d;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   SOCIALE LINKS
+========================================================= */
+
+.footer-socials {
+  margin-top: 34px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+.footer-social-link {
+  width: 47px;
+  height: 47px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 11px;
+
+  background: #3973bb;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.footer-social-link:hover {
+  transform:
+    translateY(-4px);
+
+  background: #275f9f;
+
+  box-shadow:
+    0 9px 20px
+    rgba(47, 101, 165, 0.22);
+}
+
+
+.footer-social-link img {
+  width: 25px;
+  height: 25px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/*
+Hvis dine in.png / mail.png allerede har
+en blå baggrund, og du ikke vil have
+en ekstra firkant omkring dem,
+kan du i stedet bruge:
+
+.footer-social-link {
+  background: transparent;
+}
+*/
+
+
+/* =========================================================
+   SKILLELINJE
+========================================================= */
+
+.footer-divider {
+  width: 1px;
+  height: 190px;
+
+  background:
+    rgba(83, 130, 187, 0.28);
+}
+
+
+/* =========================================================
+   KONTAKT
+========================================================= */
+
+.footer-contact {
+  position: relative;
+
+  max-width: 360px;
+}
+
+
+.footer-small-title {
+  margin:
+    0 0 20px !important;
+
+  color: #173252 !important;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size:
+    12px !important;
+
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+}
+
+
+.footer-contact h3 {
+  margin:
+    0 0 16px;
+
+  color: #142b46;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 24px;
+
+  line-height: 1.35;
+
+  font-weight: 600;
+}
+
+
+.footer-contact > p {
+  margin:
+    0 0 27px;
+
+  color: #34475c;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   KONTAKT KNAP
+========================================================= */
+
+.footer-contact-btn {
+  min-width: 145px;
+
+  padding:
+    13px 20px;
+
+  display: inline-flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 35px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  background: #6593cf;
+
+  color: #ffffff;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.footer-contact-btn span {
+  font-size: 19px;
+}
+
+
+.footer-contact-btn:hover {
+  transform:
+    translateY(-3px);
+
+  background: #4f82c2;
+
+  box-shadow:
+    0 10px 25px
+    rgba(62, 111, 171, 0.24);
+}
+
+
+/* =========================================================
+   DEKORATIV BAGGRUNDSFORM
+========================================================= */
+
+.footer-shape {
+  position: absolute;
+
+  right: -100px;
+  top: -90px;
+
+  width: 420px;
+  height: 420px;
+
+  border-radius:
+    48% 52% 62% 38% /
+    46% 38% 62% 54%;
+
+  background:
+    rgba(255, 255, 255, 0.37);
+
+  transform:
+    rotate(-15deg);
+}
+
+
+/* =========================================================
+   STJERNE
+========================================================= */
+
+.footer-star {
+  position: absolute;
+
+  right: 12%;
+  bottom: 55px;
+
+  color: #82abe0;
+
+  font-size: 75px;
+
+  line-height: 1;
+
+  opacity: 0.85;
+}
+
+
+/* =========================================================
+   PRIKKER
+========================================================= */
+
+.footer-dots {
+  position: absolute;
+
+  right: 4%;
+  bottom: 60px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 5px);
+
+  gap: 12px;
+}
+
+
+.footer-dots span {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #9dbce5;
+}
+
+
+/* =========================================================
+   BØLGE
+========================================================= */
+
+.footer-wave {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 90px;
+
+  pointer-events: none;
+}
+
+
+.footer-wave svg {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .portfolio-footer-content {
+    grid-template-columns:
+      1fr 1px 1fr;
+
+    gap: 40px;
+  }
+
+
+  .footer-name h2 {
+    font-size: 18px;
+  }
+
+
+  .footer-contact h3 {
+    font-size: 21px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBIL
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .portfolio-footer {
+    min-height: auto;
+
+    padding:
+      60px 0 100px;
+  }
+
+
+  .portfolio-footer-content {
+    width: 86%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 45px;
+  }
+
+
+  .footer-about {
+    width: 100%;
+  }
+
+
+  .footer-name {
+    margin-bottom: 20px;
+  }
+
+
+  .footer-name-star {
+    font-size: 34px;
+  }
+
+
+  .footer-name h2 {
+    font-size: 17px;
+  }
+
+
+  .footer-about > p {
+    font-size: 13px;
+  }
+
+
+  .footer-divider {
+    width: 100%;
+    height: 1px;
+
+    background:
+      rgba(83, 130, 187, 0.25);
+  }
+
+
+  .footer-contact {
+    width: 100%;
+  }
+
+
+  .footer-contact h3 {
+    font-size: 21px;
+  }
+
+
+  .footer-contact > p {
+    font-size: 13px;
+  }
+
+
+  .footer-star {
+    right: 8%;
+
+    bottom: 45px;
+
+    font-size: 55px;
+  }
+
+
+  .footer-dots {
+    display: none;
+  }
+
+}

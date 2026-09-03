@@ -1,0 +1,1051 @@
+/* =========================================================
+   OVERLAY BAGGRUND
+========================================================= */
+
+.contact-overlay {
+  position: fixed;
+  inset: 0;
+
+  width: 100%;
+  height: 100dvh;
+
+  padding: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(19, 35, 56, 0.68);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  overflow: hidden;
+  overscroll-behavior: none;
+
+  z-index: 9999;
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.contact-modal {
+  position: relative;
+
+  width: min(1060px, 94vw);
+  height: min(720px, calc(100dvh - 28px));
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #fafcff 50%,
+      #edf5ff 100%
+    );
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 25px 80px
+    rgba(6, 25, 48, 0.28);
+}
+
+
+/* =========================================================
+   INDHOLD
+========================================================= */
+
+.contact-modal-content {
+  position: relative;
+  z-index: 10;
+
+  width: 100%;
+  height: 100%;
+
+  padding:
+    70px
+    70px
+    55px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.05fr 0.95fr;
+
+  gap: 55px;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   LUK KNAP
+========================================================= */
+
+.contact-close {
+  position: absolute;
+
+  top: 18px;
+  right: 18px;
+
+  z-index: 50;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  color: #3d70b3;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 32px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 18px
+    rgba(42, 76, 119, 0.15);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.contact-close:hover {
+  transform:
+    rotate(8deg)
+    scale(1.07);
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   VENSTRE SIDE
+========================================================= */
+
+.contact-info {
+  position: relative;
+  z-index: 10;
+
+  min-width: 0;
+}
+
+
+/* TITEL */
+
+.contact-info h2 {
+  margin:
+    0 0 24px;
+
+  color: #142b46;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(44px, 5vw, 66px);
+
+  line-height: 0.98;
+
+  font-weight: 500;
+}
+
+
+/* INTRO */
+
+.contact-intro {
+  margin:
+    0 0 28px;
+
+  color: #20354e;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size:
+    clamp(14px, 1.4vw, 17px);
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   KONTAKT INFO
+========================================================= */
+
+.contact-details {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+.contact-detail {
+  width: 100%;
+
+  min-height: 58px;
+
+  padding:
+    8px 15px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  border-radius: 12px;
+
+  background:
+    rgba(255, 255, 255, 0.95);
+
+  color: #142b46;
+
+  text-decoration: none;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  box-shadow:
+    0 4px 14px
+    rgba(44, 77, 115, 0.10);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.contact-detail:hover {
+  transform:
+    translateX(5px);
+
+  box-shadow:
+    0 9px 22px
+    rgba(44, 77, 115, 0.15);
+}
+
+
+/* TELEFON / MAIL IKON */
+
+.contact-detail-icon {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #e6f0fc;
+
+  color: #3f77bc;
+
+  font-size: 18px;
+}
+
+
+/* LINKEDIN */
+
+.contact-linkedin-icon {
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 6px;
+
+  background: #4c7fc1;
+
+  color: white;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 20px;
+
+  font-weight: bold;
+}
+
+
+/* INFO TEKST */
+
+.contact-detail-text {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  flex-wrap: wrap;
+
+  font-size:
+    clamp(13px, 1.2vw, 16px);
+}
+
+
+.contact-detail-text strong {
+  font-weight: 700;
+}
+
+
+.contact-blue-link {
+  color: #5788c6;
+}
+
+
+/* =========================================================
+   HÅNDSKRIFT NEDERST
+========================================================= */
+
+.contact-bottom {
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+.contact-message {
+  margin: 0;
+
+  color: #6997cf;
+
+  font-family:
+    "Brush Script MT",
+    "Segoe Script",
+    cursive;
+
+  font-size:
+    clamp(26px, 3vw, 33px);
+
+  line-height: 1;
+
+  transform:
+    rotate(-3deg);
+}
+
+
+.contact-hand-arrow {
+  color: #6f9ed6;
+
+  font-size: 34px;
+
+  transform:
+    rotate(-10deg);
+}
+
+
+/* =========================================================
+   HØJRE BILLEDE
+========================================================= */
+
+.contact-photo-area {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* POLAROID */
+
+.contact-photo {
+  position: relative;
+
+  width:
+    min(300px, 86%);
+
+  padding:
+    12px 12px 30px;
+
+  background: white;
+
+  transform:
+    rotate(5deg);
+
+  box-shadow:
+    0 14px 32px
+    rgba(33, 57, 86, 0.18);
+}
+
+
+/* FOTO */
+
+.contact-photo img {
+  width: 100%;
+  height: auto;
+
+  max-height: 370px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* =========================================================
+   TAPE
+   SITTER FAST PÅ BILLEDET
+========================================================= */
+
+.contact-tape {
+  position: absolute;
+
+  z-index: 30;
+
+  top: -2%;
+  left: 50%;
+
+  width: 38%;
+  height: 9%;
+
+  transform:
+    translateX(-50%)
+    rotate(7deg);
+
+  background:
+    rgba(225, 202, 160, 0.82);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   SKRIV TIL MIG KNAP
+========================================================= */
+
+.contact-write {
+  position: absolute;
+
+  right: 0;
+  bottom: 14px;
+
+  width:
+    min(270px, 90%);
+
+  padding:
+    17px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 13px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #6697d5,
+      #467bc1
+    );
+
+  color: white;
+
+  text-decoration: none;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 12px 28px
+    rgba(51, 99, 158, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.contact-write span {
+  font-size: 28px;
+}
+
+
+.contact-write:hover {
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    0 18px 32px
+    rgba(51, 99, 158, 0.32);
+}
+
+
+/* =========================================================
+   BLÅ ORGANISK FORM ØVERST
+========================================================= */
+
+.contact-blue-shape {
+  position: absolute;
+
+  z-index: 1;
+
+  top: -160px;
+  left: -170px;
+
+  width: 600px;
+  height: 320px;
+
+  border-radius:
+    40% 60% 55% 45% /
+    55% 45% 55% 45%;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(191, 218, 249, 0.9),
+      rgba(224, 238, 255, 0.65)
+    );
+
+  transform:
+    rotate(-9deg);
+}
+
+
+/* =========================================================
+   BLÅ FORM NEDERST
+========================================================= */
+
+.contact-bottom-shape {
+  position: absolute;
+
+  z-index: 1;
+
+  right: -180px;
+  bottom: -230px;
+
+  width: 620px;
+  height: 420px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(213, 231, 252, 0.65);
+
+  transform:
+    rotate(-10deg);
+}
+
+
+/* =========================================================
+   STJERNER
+========================================================= */
+
+.contact-decoration-star {
+  position: absolute;
+
+  z-index: 4;
+
+  color: #88afe0;
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+
+.contact-star-left {
+  left: 30px;
+  top: 47%;
+
+  font-size: 55px;
+}
+
+
+.contact-star-right {
+  right: 20px;
+  top: 60%;
+
+  font-size: 60px;
+}
+
+
+/* =========================================================
+   PRIKKER
+========================================================= */
+
+.contact-dots {
+  position: absolute;
+
+  z-index: 4;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 6px);
+
+  gap: 12px;
+}
+
+
+.contact-dots span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #9cbce5;
+}
+
+
+.contact-dots-top {
+  top: 40px;
+  left: 38px;
+}
+
+
+.contact-dots-bottom {
+  right: 40px;
+  bottom: 75px;
+}
+
+
+/* =========================================================
+   SMÅ BLÅ STREGER
+========================================================= */
+
+.contact-lines {
+  position: absolute;
+
+  z-index: 5;
+
+  left: 48%;
+  top: 65px;
+
+  width: 60px;
+  height: 55px;
+}
+
+
+.contact-lines span {
+  position: absolute;
+
+  width: 4px;
+  height: 25px;
+
+  border-radius: 20px;
+
+  background: #78a7df;
+}
+
+
+.contact-lines span:nth-child(1) {
+  left: 0;
+
+  transform:
+    rotate(8deg);
+}
+
+
+.contact-lines span:nth-child(2) {
+  left: 20px;
+  top: 10px;
+
+  transform:
+    rotate(32deg);
+}
+
+
+.contact-lines span:nth-child(3) {
+  left: 42px;
+  top: 24px;
+
+  transform:
+    rotate(70deg);
+}
+
+
+/* =========================================================
+   BØLGE NEDERST
+========================================================= */
+
+.contact-wave {
+  position: absolute;
+
+  z-index: 3;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 60px;
+
+  pointer-events: none;
+}
+
+
+.contact-wave svg {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+
+
+/* =========================================================
+   LAVERE LAPTOP-SKÆRME
+========================================================= */
+
+@media (max-height: 780px) and (min-width: 701px) {
+
+  .contact-modal {
+    width: min(1040px, 95vw);
+
+    height:
+      calc(100dvh - 22px);
+  }
+
+
+  .contact-modal-content {
+    padding:
+      38px
+      60px
+      28px;
+
+    gap: 45px;
+
+    transform:
+      translateY(-12px);
+  }
+
+
+  .contact-info h2 {
+    font-size: 48px;
+
+    margin-bottom: 14px;
+  }
+
+
+  .contact-intro {
+    font-size: 14px;
+
+    line-height: 1.45;
+
+    margin-bottom: 18px;
+  }
+
+
+  .contact-detail {
+    min-height: 50px;
+  }
+
+
+  .contact-detail-icon {
+    width: 33px;
+    height: 33px;
+
+    font-size: 15px;
+  }
+
+
+  .contact-linkedin-icon {
+    width: 31px;
+    height: 31px;
+
+    font-size: 16px;
+  }
+
+
+  .contact-detail-text {
+    font-size: 13px;
+  }
+
+
+  .contact-bottom {
+    margin-top: 10px;
+  }
+
+
+  .contact-message {
+    font-size: 26px;
+  }
+
+
+  .contact-hand-arrow {
+    font-size: 27px;
+  }
+
+
+  .contact-photo {
+    width: 250px;
+
+    padding:
+      10px 10px 26px;
+  }
+
+
+  .contact-photo img {
+    max-height: 300px;
+  }
+
+
+  .contact-write {
+    width: 225px;
+
+    bottom: 8px;
+
+    padding:
+      13px 18px;
+
+    font-size: 17px;
+  }
+
+
+  .contact-write span {
+    font-size: 23px;
+  }
+
+
+  .contact-close {
+    width: 42px;
+    height: 42px;
+
+    font-size: 28px;
+  }
+
+
+  .contact-star-left {
+    font-size: 45px;
+  }
+
+
+  .contact-star-right {
+    font-size: 48px;
+  }
+
+
+  .contact-dots-top {
+    top: 28px;
+  }
+
+
+  .contact-wave {
+    height: 45px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBIL
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .contact-overlay {
+    padding: 8px;
+  }
+
+
+  .contact-modal {
+    width: 100%;
+
+    height:
+      calc(100dvh - 16px);
+
+    border-radius: 18px;
+  }
+
+
+  .contact-modal-content {
+    padding:
+      58px
+      18px
+      22px;
+
+    grid-template-columns:
+      1fr 145px;
+
+    gap: 16px;
+
+    align-items: center;
+  }
+
+
+  .contact-info h2 {
+    font-size:
+      clamp(31px, 9vw, 42px);
+
+    margin-bottom: 13px;
+  }
+
+
+  .contact-intro {
+    font-size: 11px;
+
+    line-height: 1.4;
+
+    margin-bottom: 15px;
+  }
+
+
+  .contact-detail {
+    min-height: 45px;
+
+    padding:
+      5px 8px;
+
+    gap: 7px;
+  }
+
+
+  .contact-detail-icon {
+    width: 28px;
+    height: 28px;
+
+    font-size: 13px;
+  }
+
+
+  .contact-linkedin-icon {
+    width: 28px;
+    height: 28px;
+
+    font-size: 14px;
+  }
+
+
+  .contact-detail-text {
+    font-size: 9px;
+
+    gap: 2px;
+  }
+
+
+  .contact-bottom {
+    margin-top: 12px;
+  }
+
+
+  .contact-message {
+    font-size: 20px;
+  }
+
+
+  .contact-hand-arrow {
+    display: none;
+  }
+
+
+  .contact-photo {
+    width: 138px;
+
+    padding:
+      7px 7px 18px;
+  }
+
+
+  .contact-photo img {
+    max-height: 205px;
+  }
+
+
+  .contact-tape {
+    top: 13%;
+
+    width: 38%;
+    height: 9%;
+  }
+
+
+  .contact-write {
+    right: 0;
+    bottom: 8%;
+
+    width: 140px;
+
+    padding:
+      10px 11px;
+
+    font-size: 12px;
+  }
+
+
+  .contact-write span {
+    font-size: 17px;
+  }
+
+
+  .contact-close {
+    width: 39px;
+    height: 39px;
+
+    top: 10px;
+    right: 10px;
+
+    font-size: 27px;
+  }
+
+
+  .contact-star-left,
+  .contact-star-right,
+  .contact-lines,
+  .contact-dots-bottom {
+    display: none;
+  }
+
+
+  .contact-dots-top {
+    top: 20px;
+    left: 20px;
+
+    gap: 8px;
+  }
+
+
+  .contact-dots span {
+    width: 4px;
+    height: 4px;
+  }
+
+
+  .contact-wave {
+    height: 35px;
+  }
+
+}

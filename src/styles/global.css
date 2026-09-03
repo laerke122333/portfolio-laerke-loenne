@@ -1,0 +1,55 @@
+:root {
+  --burgundy: #59142f;
+  --burgundy-dark: #461024;
+  --blue: #a9cff4;
+  --pink: #dd899b;
+  --sage: #66706a;
+  --paper: #faf7f4;
+  --text: #111111;
+  --line: #d8d2cf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+
+  background: #ffffff;
+  color: var(--text);
+
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button {
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.page-shell {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
