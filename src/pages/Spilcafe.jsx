@@ -71,21 +71,21 @@ export default function Spilcafe({ onContact }) {
       results={[
         {
           icon: "▦",
-          image: "/images/spilcafefilter.png",
+          image: `${import.meta.env.BASE_URL}images/spilcafefilter.png`,
           title: "Overblik over spil",
           text: "Brugeren kan hurtigt danne sig et overblik over caféens spiludvalg.",
         },
 
         {
           icon: "⌕",
-          image: "/images/spilcafe.png",
+          image: `${import.meta.env.BASE_URL}images/spilcafe.png`,
           title: "Lettere valg",
           text: "Strukturen hjælper gæsten med at finde spil, der passer til situationen.",
         },
 
         {
           icon: "♡",
-          image: "/images/spil-cafe.card.png",
+          image: `${import.meta.env.BASE_URL}images/spil-cafe.card.png`,
           title: "Bedre oplevelse",
           text: "Løsningen understøtter en mere overskuelig oplevelse i caféen.",
         },

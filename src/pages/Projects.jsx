@@ -3,72 +3,64 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const projects = [
-  {
-    number: "01",
-    title: "MELLEMRUM",
-    category: "UX/UI · REACT · SUPABASE",
-    description:
-      "En digital eventplatform, hvor brugere kan finde arrangementer, tilmelde sig og selv oprette events.",
-    image: "mellemrum-hero.png",
-    to: "/projekter/mellemrum",
-    latest: true,
-  },
-
-  {
-    number: "02",
-    title: "RESET APP",
-    category: "UX/UI & FRONTEND",
-    description:
-      "Selvvalgt eksamensopgave med fokus på at hjælpe husstanden med at holde styr på pligter og ansvar.",
-    image: "resetbillede.png",
-    to: "/projekter/reset",
-  },
-
-  {
-    number: "03",
-    title: "SPILCAFÉ",
-    category: "UX/UI DESIGN",
-    description:
-      "En digital løsning til en spilcafé i Aarhus, der hjælper gæster med at finde spil og skabe overblik over udvalget.",
-    image: "spilcafe.png",
-    to: "/projekter/spilcafe",
-  },
-
-  {
-    number: "04",
-    title: "NORTH",
-    category: "CUSTOMER EXPERIENCE",
-    description:
-      "Et projekt med fokus på customer experience, research og udvikling af en sammenhængende digital brugeroplevelse.",
-    image: "north.png",
-    to: "/projekter/north",
-  },
-
-  {
-    number: "05",
-    title: "STORCENTER NORD",
-    category: "UX & DIGITAL DESIGN",
-    description:
-      "Et projekt med fokus på at skabe en mere overskuelig og relevant digital oplevelse for centrets besøgende.",
-    image: "centernord.png",
-    to: "/projekter/storcenter-nord",
-  },
-];
-
 export default function Projects({ onContact }) {
+  const projects = [
+    {
+      number: "01",
+      title: "MELLEMRUM",
+      category: "UX/UI · REACT · SUPABASE",
+      description:
+        "En digital eventplatform, hvor brugere kan finde arrangementer, tilmelde sig og selv oprette events.",
+      image: "mellemrum-hero.png",
+      to: "/projekter/mellemrum",
+      latest: true,
+    },
+
+    {
+      number: "02",
+      title: "RESET",
+      category: "UX/UI · REACT · SUPABASE",
+      description:
+        "En digital løsning med fokus på at skabe overblik over hverdagens opgaver og gøre fordelingen mere overskuelig.",
+      image: "resetbillede.png",
+      to: "/projekter/reset",
+    },
+
+    {
+      number: "03",
+      title: "SPILCAFÉ",
+      category: "UX/UI · BRUGEROPLEVELSE",
+      description:
+        "Et projekt med fokus på at gøre det lettere for gæster at finde og vælge spil gennem en mere overskuelig digital løsning.",
+      image: "spil-cafe.card.png",
+      to: "/projekter/spilcafe",
+    },
+
+    {
+      number: "04",
+      title: "NORTH",
+      category: "CUSTOMER EXPERIENCE",
+      description:
+        "Et projekt med fokus på customer experience, research og udvikling af en sammenhængende digital brugeroplevelse.",
+      image: "north.card.png",
+      to: "/projekter/north",
+    },
+  ];
+
   return (
     <div className="projects-page">
+      {/* =====================================================
+          HEADER
+      ====================================================== */}
+
       <Header onContact={onContact} />
 
-      {/* =====================================
+      {/* =====================================================
           HERO
-      ====================================== */}
+      ====================================================== */}
 
       <section className="projects-hero">
         <div className="projects-hero-circle"></div>
-
-        <div className="projects-hero-star">✳</div>
 
         <div className="projects-hero-content">
           <p className="projects-overline">MIT ARBEJDE</p>
@@ -83,20 +75,38 @@ export default function Projects({ onContact }) {
             UX/UI, research, Figma, prototyping og frontend.
           </p>
         </div>
+
+        <span className="projects-hero-star">✳</span>
       </section>
 
-      {/* =====================================
+      {/* =====================================================
           PROJEKTER
-      ====================================== */}
+      ====================================================== */}
 
-      <main className="projects-content">
+      <section className="projects-content">
+        {/* OVERSKRIFT */}
+
         <div className="projects-content-heading">
           <div>
             <p>UDVALGTE PROJEKTER</p>
 
-            <h2>Design der skaber værdi.</h2>
+            <h2>
+              Design der skaber
+              <br />
+              værdi.
+            </h2>
           </div>
+
+          <p className="projects-heading-text">
+            Her er et udvalg af projekter, hvor jeg har arbejdet med forskellige
+            dele af den digitale designproces – fra research og idéudvikling til
+            design og udvikling.
+          </p>
         </div>
+
+        {/* =====================================================
+            GRID
+        ====================================================== */}
 
         <div className="projects-grid">
           {projects.map((project) => (
@@ -105,15 +115,28 @@ export default function Projects({ onContact }) {
               className="project-overview-card"
               key={project.title}
             >
+              {/* BILLEDE */}
+
               <div className="project-overview-image">
-                {project.latest && (
-                  <span className="latest-project-badge">NYESTE PROJEKT</span>
-                )}
+                <img
+                  src={`${import.meta.env.BASE_URL}images/${project.image}`}
+                  alt={`${project.title} projekt`}
+                  loading="lazy"
+                />
+
+                {/* NUMMER */}
 
                 <span className="project-number">{project.number}</span>
 
-                <img src={`/images/${project.image}`} alt={project.title} />
+                {/* NYESTE PROJEKT */}
+
+                {project.latest && (
+                  <span className="latest-project-badge">NYESTE PROJEKT</span>
+                )}
               </div>
+
+              {/* TEKST */}
+
               <div className="project-overview-info">
                 <p className="project-overview-category">{project.category}</p>
 
@@ -128,7 +151,11 @@ export default function Projects({ onContact }) {
             </Link>
           ))}
         </div>
-      </main>
+      </section>
+
+      {/* =====================================================
+          FOOTER
+      ====================================================== */}
 
       <Footer onContact={onContact} />
     </div>

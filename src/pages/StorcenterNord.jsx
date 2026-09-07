@@ -71,21 +71,21 @@ export default function StorcenterNord({ onContact }) {
       results={[
         {
           icon: "▦",
-          image: "/images/centernord.png",
+          image: `${import.meta.env.BASE_URL}images/centernord.png`,
           title: "Bedre oplevelse for alle",
           text: "Vi arbejde med at gøre hele oplevelsen sjov og enkel for alle aldre.",
         },
 
         {
           icon: "◎",
-          image: "/images/persona.fisk.png",
+          image: `${import.meta.env.BASE_URL}images/persona.fisk.png`,
           title: "Relevant indhold",
           text: "Ud fra vores persona udvalgte vi den valgte information der var nødvendig.",
         },
 
         {
           icon: "↗",
-          image: "/images/fisk.png",
+          image: `${import.meta.env.BASE_URL}images/fisk.png`,
           title: "Sammenhængende visuel oplevelse",
           text: "Vi arbejdede med samme visuelle stil i hele processen for at skabe en sammenhængende oplevelse.",
         },

@@ -71,21 +71,21 @@ export default function North({ onContact }) {
       results={[
         {
           icon: "▦",
-          image: "/images/north.png",
+          image: `${import.meta.env.BASE_URL}images/north.png`,
           title: "Tydelig struktur",
           text: "Indhold og navigation er organiseret, så brugeren hurtigt kan orientere sig.",
         },
 
         {
           icon: "♡",
-          image: "/images/north.card.png",
+          image: `${import.meta.env.BASE_URL}images/north.card.png`,
           title: "Tryg oplevelse",
           text: "Det visuelle design skaber en rolig og sammenhængende kundeoplevelse.",
         },
 
         {
           icon: "✦",
-          image: "/images/north.personer.png",
+          image: `${import.meta.env.BASE_URL}images/north.personer.png`,
           title: "Stærkere identitet",
           text: "Designet understøtter Norths visuelle univers og brandoplevelse.",
         },

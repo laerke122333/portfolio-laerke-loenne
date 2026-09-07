@@ -104,7 +104,10 @@ export default function Mellemrum({ onContact }) {
                   playsInline
                   preload="auto"
                 >
-                  <source src="/videos/mellemrum.mp4" type="video/mp4" />
+                  <source
+                    src={`${import.meta.env.BASE_URL}videos/mellemrum.mp4`}
+                    type="video/mp4"
+                  />
                   Din browser understøtter ikke video.
                 </video>
               </div>
@@ -223,7 +226,7 @@ export default function Mellemrum({ onContact }) {
             <div className="feature-tape"></div>
 
             <img
-              src="/images/mellemrum-opret.png"
+              src={`${import.meta.env.BASE_URL}images/mellemrum-events.png`}
               alt="Eventoversigt i Mellemrum"
             />
           </div>
@@ -260,7 +263,7 @@ export default function Mellemrum({ onContact }) {
             <div className="feature-tape"></div>
 
             <img
-              src="/images/mellemrum-profil.png"
+              src={`${import.meta.env.BASE_URL}images/mellemrum-opret.png`}
               alt="Opret event i Mellemrum"
             />
           </div>
@@ -298,8 +301,8 @@ export default function Mellemrum({ onContact }) {
             <div className="feature-tape"></div>
 
             <img
-              src="/images/mellemrum-events.png"
-              alt="Tilmeldinger i Mellemrum"
+              src={`${import.meta.env.BASE_URL}images/mellemrum-profil.png`}
+              alt="Profil og tilmeldinger i Mellemrum"
             />
           </div>
 

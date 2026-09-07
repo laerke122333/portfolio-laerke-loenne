@@ -70,9 +70,7 @@ export default function Home({ onContact }) {
 
           <div className="design-repeat">
             <span>DESIGN</span>
-
             <span>DESIGN</span>
-
             <span>DESIGN</span>
           </div>
 
@@ -81,7 +79,10 @@ export default function Home({ onContact }) {
           <div className="hero-photo">
             <div className="hero-tape"></div>
 
-            <img src="/images/migigen.png" alt="Lærke Theodine Lønne" />
+            <img
+              src={`${import.meta.env.BASE_URL}images/migigen.png`}
+              alt="Lærke Theodine Lønne"
+            />
           </div>
 
           <div className="hero-decoration-star">✳</div>
@@ -100,7 +101,10 @@ export default function Home({ onContact }) {
         <div className="home-about-image">
           <div className="about-image-tape"></div>
 
-          <img src="/images/profilbillede.JPG" alt="Lærke" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/profilbillede.JPG`}
+            alt="Lærke"
+          />
         </div>
 
         {/* TEKST */}
@@ -134,7 +138,10 @@ export default function Home({ onContact }) {
 
         <article className="about-card about-card-blue">
           <div className="about-card-icon">
-            <img src="/images/hardskills.png" alt="Hard skills" />
+            <img
+              src={`${import.meta.env.BASE_URL}images/hardskills.png`}
+              alt="Hard skills"
+            />
           </div>
 
           <div className="about-card-content">
@@ -149,13 +156,9 @@ export default function Home({ onContact }) {
 
             <div className="skills-tags">
               <span>Figma</span>
-
               <span>UX/UI</span>
-
               <span>Prototyping</span>
-
               <span>Designsystemer</span>
-
               <span>React</span>
             </div>
           </div>
@@ -165,7 +168,10 @@ export default function Home({ onContact }) {
 
         <article className="about-card about-card-blue">
           <div className="about-card-icon">
-            <img src="/images/softskills.png" alt="Soft skills" />
+            <img
+              src={`${import.meta.env.BASE_URL}images/softskills.png`}
+              alt="Soft skills"
+            />
           </div>
 
           <div className="about-card-content">
@@ -196,7 +202,10 @@ export default function Home({ onContact }) {
         {/* IKON */}
 
         <div className="personality-icon">
-          <img src="/images/personlighedprofil.png" alt="Personlighedsprofil" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/personlighedprofil.png`}
+            alt="Personlighedsprofil"
+          />
         </div>
 
         {/* TEKST */}
@@ -230,7 +239,10 @@ export default function Home({ onContact }) {
         {/* IKON */}
 
         <div className="person-icon">
-          <img src="/images/migsomperson.png" alt="Mig som person" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/migsomperson.png`}
+            alt="Mig som person"
+          />
         </div>
 
         {/* TEKST */}
@@ -253,13 +265,10 @@ export default function Home({ onContact }) {
 
           <p>Jeg har også været frivillig på en pigegolfcamp i Himmerland.</p>
         </div>
-
-      
       </section>
 
       {/* =====================================================
           LOTTIE ANIMATION
-          LIGGER DIREKTE UNDER "MIG SOM PERSON"
       ====================================================== */}
 
       <section className="home-lottie-section">
@@ -267,7 +276,7 @@ export default function Home({ onContact }) {
 
         <div className="home-lottie-wrapper">
           <Lottie
-            src="/lottie/Scene.json"
+            src={`${import.meta.env.BASE_URL}lottie/Scene.json`}
             autoplay
             loop
             className="home-lottie-animation"

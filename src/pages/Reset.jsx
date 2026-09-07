@@ -71,21 +71,21 @@ export default function Reset({ onContact }) {
       results={[
         {
           icon: "✓",
-          image: "/images/resetbillede.png",
+          image: `${import.meta.env.BASE_URL}images/resetbillede.png`,
           title: "Overblik over opgaver",
           text: "Brugeren får hurtigt et samlet overblik over husstandens aktuelle opgaver.",
         },
 
         {
           icon: "↔",
-          image: "/images/resetoverblik.png",
+          image: `${import.meta.env.BASE_URL}images/resetoverblik.png`,
           title: "Nem fordeling",
           text: "Opgaver kan tydeligt fordeles mellem personerne i husstanden.",
         },
 
         {
           icon: "★",
-          image: "/images/resetbelønninger.png",
+          image: `${import.meta.env.BASE_URL}images/resetbelønninger.png`,
           title: "Motivation",
           text: "Pointsystemet tilfører gamification og gør opgaverne mere motiverende.",
         },
