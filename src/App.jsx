@@ -9,6 +9,7 @@ import Reset from "./pages/Reset";
 import North from "./pages/North";
 import Spilcafe from "./pages/Spilcafe";
 import StorcenterNord from "./pages/StorcenterNord";
+import DateIdea from "./pages/DateIdea";
 
 import ContactOverlay from "./components/ContactOverlay";
 
@@ -107,10 +108,14 @@ export default function App() {
         />
 
         {/* STORCENTER NORD */}
+        <Route
+          path="/projekter/storcenternord"
+          element={<StorcenterNord onContact={() => setContactOpen(true)} />}
+        />
 
         <Route
-          path="/projekter/storcenter-nord"
-          element={<StorcenterNord onContact={() => setContactOpen(true)} />}
+          path="/projekter/date-idea"
+          element={<DateIdea onContact={() => setContactOpen(true)} />}
         />
       </Routes>
 

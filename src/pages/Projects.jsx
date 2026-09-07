@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 export default function Projects({ onContact }) {
   const projects = [
     {
-      number: "01",
       title: "MELLEMRUM",
       category: "UX/UI · REACT · SUPABASE",
       description:
@@ -17,7 +16,6 @@ export default function Projects({ onContact }) {
     },
 
     {
-      number: "02",
       title: "RESET",
       category: "UX/UI · REACT · SUPABASE",
       description:
@@ -25,9 +23,17 @@ export default function Projects({ onContact }) {
       image: "resetbillede.png",
       to: "/projekter/reset",
     },
-
+    
     {
-      number: "03",
+      number: "05",
+      title: "DATE IDEA",
+      category: "FRITIDSPROJEKT · UX/UI · REACT",
+      description:
+        "Et personligt projekt udviklet i min fritid med fokus på at gøre det nemmere og sjovere for par at finde inspiration til nye dates.",
+      image: "dateideer.PNG",
+      to: "/projekter/date-idea",
+    },
+    {
       title: "SPILCAFÉ",
       category: "UX/UI · BRUGEROPLEVELSE",
       description:
@@ -37,13 +43,21 @@ export default function Projects({ onContact }) {
     },
 
     {
-      number: "04",
       title: "NORTH",
       category: "CUSTOMER EXPERIENCE",
       description:
         "Et projekt med fokus på customer experience, research og udvikling af en sammenhængende digital brugeroplevelse.",
       image: "north.card.png",
       to: "/projekter/north",
+    },
+
+    {
+      title: "STORCENTER NORD",
+      category: "CUSTOMER EXPERIENCE",
+      description:
+        "Et projekt med fokus på customer experience, research og udvikling af en sammenhængende digital brugeroplevelse.",
+      image: "centernord.png",
+      to: "/projekter/storcenternord",
     },
   ];
 
