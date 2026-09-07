@@ -11,6 +11,7 @@ import "./styles/contact-overlay.css";
 import "./styles/home.css";
 import "./styles/project.css";
 import "./styles/projects.css";
+import "./styles/mellemrum.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
