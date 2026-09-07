@@ -62,6 +62,15 @@ export default function Mellemrum({ onContact }) {
                   En digital eventplatform, hvor brugere kan finde
                   arrangementer, tilmelde sig og selv oprette events.
                 </p>
+
+                <a
+                  href="https://laerke122333.github.io/mellemrum/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-live-link"
+                >
+                  Se live hjemmeside →
+                </a>
               </div>
             </div>
 
