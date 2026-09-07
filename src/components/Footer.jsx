@@ -23,8 +23,6 @@ export default function Footer({ onContact }) {
 
         <div className="footer-about">
           <div className="footer-name">
-            
-
             <h2>Lærke Theodine Lønne</h2>
           </div>
 
@@ -43,7 +41,10 @@ export default function Footer({ onContact }) {
               aria-label="LinkedIn"
               className="footer-social-link"
             >
-              <img src="/images/in.png" alt="LinkedIn" />
+              <img
+                src={`${import.meta.env.BASE_URL}images/in.png`}
+                alt="LinkedIn"
+              />
             </a>
 
             {/* MAIL */}
@@ -53,7 +54,10 @@ export default function Footer({ onContact }) {
               aria-label="Send mail"
               className="footer-social-link"
             >
-              <img src="/images/mail.png" alt="Mail" />
+              <img
+                src={`${import.meta.env.BASE_URL}images/mail.png`}
+                alt="Mail"
+              />
             </a>
           </div>
         </div>

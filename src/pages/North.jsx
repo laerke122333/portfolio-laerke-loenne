@@ -8,8 +8,8 @@ export default function North({ onContact }) {
       title="NORTH"
       scriptTitle="Strik med omtanke"
       intro="Et projekt med fokus på customer experience, research og udviklingen af en sammenhængende digital oplevelse."
-      video="/videos/northvideo.mp4"
-      poster="/images/north-card.png"
+      src={`${import.meta.env.BASE_URL}videos/northvideo.mp4`}
+      poster={`${import.meta.env.BASE_URL}images/north.card.png`}
       mediaType="phone"
       overview={[
         {

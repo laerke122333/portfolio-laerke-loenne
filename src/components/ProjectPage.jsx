@@ -4,18 +4,18 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 export default function ProjectPage({
+  onContact,
   category,
   title,
   scriptTitle,
   intro,
-  video,
+  src,
   poster,
-  mediaType = "phone",
-  overview,
-  about,
-  process,
-  results,
-  onContact,
+  mediaType,
+  overview = [],
+  about = [],
+  process = [],
+  results = [],
 }) {
   return (
     <div className="project-page">
@@ -105,7 +105,7 @@ export default function ProjectPage({
                   preload="auto"
                   poster={poster}
                 >
-                  <source src={video} type="video/mp4" />
+                  <source src={src} type="video/mp4" />
                   Din browser understøtter ikke video.
                 </video>
               </div>

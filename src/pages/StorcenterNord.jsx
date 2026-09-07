@@ -8,8 +8,9 @@ export default function StorcenterNord({ onContact }) {
       title="STORCENTER"
       scriptTitle="Nord"
       intro="En digital løsning med fokus på at skabe en mere overskuelig og relevant oplevelse for Storcenter Nords besøgende."
-      video="/videos/storcenternordvideo.mp4"
-      poster="/images/storcenter-card.png"
+      // VIDEO
+      src={`${import.meta.env.BASE_URL}videos/storcenternordvideo.mp4`}
+      poster={`${import.meta.env.BASE_URL}images/centernord.png`}
       mediaType="phone"
       overview={[
         {

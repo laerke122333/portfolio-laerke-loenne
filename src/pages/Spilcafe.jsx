@@ -8,8 +8,9 @@ export default function Spilcafe({ onContact }) {
       title="SPIL"
       scriptTitle="Café"
       intro="En digital løsning til en spilcafé i Aarhus, der hjælper gæster med at finde rundt i caféens store udvalg af spil."
-      video="/videos/spilcafevideo.mp4"
-      poster="/images/spilcafe.png"
+      // SPILCAFÉ
+      src={`${import.meta.env.BASE_URL}videos/spilcafevideo.mp4`}
+      poster={`${import.meta.env.BASE_URL}images/spilcafe.png`}
       mediaType="phone"
       overview={[
         {

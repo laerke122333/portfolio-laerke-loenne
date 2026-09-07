@@ -184,7 +184,10 @@ export default function ContactOverlay({ open, onClose }) {
             <div className="contact-photo">
               <div className="contact-tape"></div>
 
-              <img src="/images/profilbillede.JPG" alt="Lærke Theodine Lønne" />
+              <img
+                src={`${import.meta.env.BASE_URL}images/profilbillede.JPG`}
+                alt="Mig"
+              />
             </div>
 
             {/* CTA KNAP */}
