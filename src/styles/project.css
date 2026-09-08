@@ -1517,3 +1517,17 @@
   }
 
 }
+
+.project-live-link {
+  display: block;
+  width: fit-content;
+  margin-top: 18px;
+
+  color: #111;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.project-live-link:hover {
+  text-decoration: underline;
+}

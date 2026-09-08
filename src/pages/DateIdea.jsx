@@ -7,10 +7,24 @@ export default function DateIdea({ onContact }) {
       category="FRITIDSPROJEKT · UX/UI & FRONTEND"
       title="DATE IDEA"
       scriptTitle="For couples"
-      intro="Et personligt projekt udviklet i min fritid med fokus på at gøre det nemmere og sjovere for par at finde inspiration til nye dates."
+      intro={
+        <>
+          Et personligt projekt udviklet i min fritid med fokus på at gøre det
+          nemmere og sjovere for par at finde inspiration til nye dates.
+          <a
+            href="https://laerke122333.github.io/date-idea-app/"
+            target="_blank"
+            rel="noreferrer"
+            className="project-live-link"
+          >
+            Se live app →
+          </a>
+        </>
+      }
       src={`${import.meta.env.BASE_URL}videos/dateideas.MP4`}
       poster={`${import.meta.env.BASE_URL}images/dateideer.png`}
       mediaType="phone"
+    
       overview={[
         {
           icon: "◷",

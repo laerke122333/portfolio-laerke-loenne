@@ -9,6 +9,8 @@ export default function ProjectPage({
   title,
   scriptTitle,
   intro,
+  liveUrl,
+  liveLabel = "Se live hjemmeside →",
   src,
   poster,
   mediaType,
@@ -17,6 +19,20 @@ export default function ProjectPage({
   process = [],
   results = [],
 }) {
+  
+  {
+    liveUrl && (
+      <a
+        href={liveUrl}
+        target="_blank"
+        rel="noreferrer"
+        className="project-live-link"
+      >
+        {liveLabel}
+      </a>
+    );
+  }
+
   return (
     <div className="project-page">
       {/* =====================================================
