@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import CV from "./pages/CV";
 
 import Mellemrum from "./pages/Mellemrum";
 import Reset from "./pages/Reset";
@@ -60,10 +61,6 @@ export default function App() {
     <>
       <ScrollHandler />
 
-      {/* =====================================
-          ALLE ROUTES SKAL VÆRE HERINDE
-      ===================================== */}
-
       <Routes>
         {/* FORSIDE */}
 
@@ -77,6 +74,13 @@ export default function App() {
         <Route
           path="/projekter"
           element={<Projects onContact={() => setContactOpen(true)} />}
+        />
+
+        {/* CV & ANSØGNING - NY SIDE */}
+
+        <Route
+          path="/cv"
+          element={<CV onContact={() => setContactOpen(true)} />}
         />
 
         {/* MELLEMRUM */}
@@ -108,10 +112,13 @@ export default function App() {
         />
 
         {/* STORCENTER NORD */}
+
         <Route
           path="/projekter/storcenternord"
           element={<StorcenterNord onContact={() => setContactOpen(true)} />}
         />
+
+        {/* DATE IDEA */}
 
         <Route
           path="/projekter/date-idea"
@@ -119,9 +126,7 @@ export default function App() {
         />
       </Routes>
 
-      {/* =====================================
-          KONTAKT OVERLAY
-      ===================================== */}
+      {/* KONTAKT OVERLAY */}
 
       <ContactOverlay
         open={contactOpen}

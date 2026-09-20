@@ -87,3 +87,87 @@
   align-items: center;
   gap: 42px;
 }
+
+
+/* =====================================
+   NAVIGATION MED CV SIDE
+===================================== */
+
+.portfolio-nav {
+  display: flex;
+  align-items: center;
+
+  gap: 32px;
+  flex-wrap: nowrap;
+}
+
+.portfolio-nav a {
+  color: #19283b;
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition: color 0.2s ease;
+}
+
+.portfolio-nav a:hover,
+.portfolio-nav a.active {
+  color: #6e98d0;
+}
+
+.portfolio-nav a.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .portfolio-nav {
+    gap: 20px;
+  }
+
+}
+
+/* MOBIL */
+
+@media (max-width: 650px) {
+
+  .portfolio-header {
+    height: auto;
+    min-height: 90px;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+  }
+
+  .portfolio-logo {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .portfolio-nav {
+    width: 100%;
+
+    justify-content: center;
+
+    gap: 14px;
+  }
+
+  .portfolio-nav a {
+    font-size: 11px;
+  }
+
+  .portfolio-contact-button {
+    font-size: 11px;
+    padding: 10px 13px;
+  }
+
+}
