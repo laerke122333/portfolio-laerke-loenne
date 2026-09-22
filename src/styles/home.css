@@ -556,24 +556,6 @@
   object-position: center 72%;
 }
 
-.about-image-tape {
-  position: absolute;
-
-  z-index: 4;
-
-  left: -20px;
-  bottom: -10px;
-
-  width: 80px;
-  height: 26px;
-
-  background:
-    rgba(157, 190, 231, 0.75);
-
-  transform:
-    rotate(10deg);
-}
-
 
 .home-about-intro {
   max-width: 620px;

@@ -72,13 +72,13 @@ export default function Footer({ onContact }) {
           <p className="footer-small-title">KONTAKT</p>
 
           <h3>
-            Har du et projekt
+            Står du og kan bruge en 
             <br />
-            eller et spørgsmål?
+            multimediedesign praktikant?
           </h3>
 
           <p>
-            Jeg hører meget gerne
+            Så hører jeg meget gerne
             <br />
             fra dig.
           </p>

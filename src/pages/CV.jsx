@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import "../styles/cv.css";
+import Footer from "../components/Footer";
 
 export default function CV({ onContact }) {
   // Stier til dine PDF-filer i public-mappen
@@ -112,6 +113,8 @@ export default function CV({ onContact }) {
           </article>
         </section>
       </main>
+
+      <Footer onContact={onContact} />
     </>
   );
 }

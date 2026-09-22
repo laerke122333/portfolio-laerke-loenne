@@ -185,7 +185,7 @@ export default function ContactOverlay({ open, onClose }) {
               <div className="contact-tape"></div>
 
               <img
-                src={`${import.meta.env.BASE_URL}images/profilbillede.JPG`}
+                src={`${import.meta.env.BASE_URL}images/profilbillede.png`}
                 alt="Mig"
               />
             </div>

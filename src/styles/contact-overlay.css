@@ -202,7 +202,7 @@
 
 
 .contact-detail {
-  width: 100%;
+  width: 90%;
 
   min-height: 58px;
 
@@ -373,79 +373,24 @@
 /* =========================================================
    HØJRE BILLEDE
 ========================================================= */
-
-.contact-photo-area {
-  position: relative;
-
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/* POLAROID */
-
-.contact-photo {
-  position: relative;
-
-  width:
-    min(300px, 86%);
-
-  padding:
-    12px 12px 30px;
-
-  background: white;
-
-  transform:
-    rotate(5deg);
-
-  box-shadow:
-    0 14px 32px
-    rgba(33, 57, 86, 0.18);
-}
-
-
-/* FOTO */
-
 .contact-photo img {
   width: 100%;
-  height: auto;
+  height: 420px;
+  max-height: none;
 
-  max-height: 370px;
-
+  border-radius: 10px;
   object-fit: cover;
+  object-position: center;
 
   display: block;
-}
 
+  /* Ryk personen mod venstre og zoom ind */
+  transform: translateX(-10px) scale(1.25);
+  transform-origin: center;
 
-/* =========================================================
-   TAPE
-   SITTER FAST PÅ BILLEDET
-========================================================= */
-
-.contact-tape {
-  position: absolute;
-
-  z-index: 30;
-
-  top: -2%;
-  left: 50%;
-
-  width: 38%;
-  height: 9%;
-
-  transform:
-    translateX(-50%)
-    rotate(7deg);
-
-  background:
-    rgba(225, 202, 160, 0.82);
-
-  pointer-events: none;
+  /* Gør farverne mere levende */
+  opacity: 1;
+  filter: saturate(1.73) contrast(1.48);
 }
 
 
@@ -456,7 +401,7 @@
 .contact-write {
   position: absolute;
 
-  right: 0;
+  right: 30px;
   bottom: 14px;
 
   width:
@@ -589,20 +534,6 @@
 }
 
 
-.contact-star-left {
-  left: 30px;
-  top: 47%;
-
-  font-size: 55px;
-}
-
-
-.contact-star-right {
-  right: 20px;
-  top: 60%;
-
-  font-size: 60px;
-}
 
 
 
@@ -622,6 +553,7 @@
 
   width: 60px;
   height: 55px;
+  rotate: -60deg;
 }
 
 
@@ -639,24 +571,25 @@
 
 .contact-lines span:nth-child(1) {
   left: 0;
+  top: -9px;
 
   transform:
-    rotate(8deg);
+    rotate(-5deg);
 }
 
 
 .contact-lines span:nth-child(2) {
-  left: 20px;
-  top: 10px;
+  left: 24px;
+  top: 2px;
 
   transform:
-    rotate(32deg);
+    rotate(24deg);
 }
 
 
 .contact-lines span:nth-child(3) {
-  left: 42px;
-  top: 24px;
+  left: 40px;
+  top: 25px;
 
   transform:
     rotate(70deg);
@@ -775,10 +708,12 @@
 
 
   .contact-photo {
-    width: 250px;
+    width: min(380px, 100%);
 
     padding:
       10px 10px 26px;
+  
+    
   }
 
 
@@ -936,16 +871,16 @@
 
 
   .contact-photo {
-    width: 138px;
-
-    padding:
-      7px 7px 18px;
-  }
+  width: min(360px, 95%);
+  
+}
 
 
   .contact-photo img {
-    max-height: 205px;
-  }
+  height: 420px;
+  max-height: none;
+  
+}
 
 
   .contact-tape {
@@ -986,7 +921,7 @@
 
 
   .contact-star-left,
-  .contact-star-right,
+ 
   .contact-lines,
   .contact-dots-bottom {
     display: none;
@@ -1012,3 +947,4 @@
   }
 
 }
+
