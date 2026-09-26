@@ -132,7 +132,7 @@ export default function ContactOverlay({ open, onClose }) {
 
                 <span className="contact-detail-text">
                   <strong>Telefon:</strong>
-                  <span>+45 22 25 85 73</span>
+                  <span>+45 22 52 85 73</span>
                 </span>
               </a>
 
