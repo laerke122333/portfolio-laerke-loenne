@@ -69,9 +69,9 @@ export default function Home({ onContact }) {
           {/* DESIGN TEKST */}
 
           <div className="design-repeat">
-            <span>DESIGN</span>
-            <span>DESIGN</span>
-            <span>DESIGN</span>
+            <span>FIGMA</span>
+            <span>UX/UI DESIGN</span>
+            <span>WEBUDVIKLING</span>
           </div>
 
           {/* HERO FOTO */}
