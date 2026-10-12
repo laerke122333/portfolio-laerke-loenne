@@ -49,18 +49,24 @@ export default function Mellemrum({ onContact }) {
             ====================================== */}
 
             <div className="mellemrum-hero-text">
-              <p className="mellemrum-category">UX/UI · REACT · SUPABASE</p>
+              <p className="mellemrum-category">REACT · SUPABASE</p>
 
               <h1>MELLEMRUM</h1>
 
-              <p className="mellemrum-script">Mit seneste projekt</p>
+              <p className="mellemrum-script">
+                Fra prototype til React-løsning
+              </p>
 
               <div className="mellemrum-note">
                 <div className="mellemrum-note-tape"></div>
 
                 <p>
-                  En digital eventplatform, hvor brugere kan finde
-                  arrangementer, tilmelde sig og selv oprette events.
+                  Mellemrum var min første case i Product Optimization, hvor
+                  fokus var at videreudvikle en eksisterende prototype til en
+                  fungerende React-løsning. Formålet med projektet var at
+                  omsætte det eksisterende design til et digitalt produkt, hvor
+                  både brugeroplevelsen, funktionaliteten og den tekniske
+                  opbygning skulle hænge sammen.
                 </p>
 
                 <a
@@ -70,6 +76,15 @@ export default function Mellemrum({ onContact }) {
                   className="project-live-link"
                 >
                   Se live hjemmeside →
+                </a>
+
+                <a
+                  href="https://github.com/laerke122333/portfolio-laerke-loenne.git"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-live-link"
+                >
+                  Github repository →
                 </a>
               </div>
             </div>
@@ -150,7 +165,7 @@ export default function Mellemrum({ onContact }) {
             <div>
               <span>MIN ROLLE</span>
 
-              <h3>UX/UI & udvikling</h3>
+              <h3>Forbedring af eksistrende kode</h3>
             </div>
           </article>
 
@@ -162,7 +177,7 @@ export default function Mellemrum({ onContact }) {
             <div>
               <span>VÆRKTØJER</span>
 
-              <h3>Figma · React · Supabase</h3>
+              <h3>React · Supabase</h3>
             </div>
           </article>
         </div>
@@ -178,24 +193,22 @@ export default function Mellemrum({ onContact }) {
         <div className="mellemrum-about-heading">
           <p>CASE STUDY</p>
 
-          <h2>OM PROJEKTET</h2>
+          <h2>Casen og udfordringen</h2>
         </div>
 
         <div className="mellemrum-about-text">
           <p>
-            Mellemrum er en digital eventplatform, der skal gøre det nemt at
-            finde arrangementer og skabe nye fællesskaber.
+            Mellemrum er udviklet med fokus på accessibility og refaktorere
+            koden. Den centrale udfordring var at sikre, at designet ikke kun
+            fungerede visuelt, men også kunne omsættes til en brugbar og
+            videreudviklingsvenlig løsning i React.
           </p>
 
           <p>
-            Brugeren kan se kommende events, dato, placering og antal ledige
-            pladser og derefter tilmelde eller afmelde sig direkte på siden.
-          </p>
-
-          <p>
-            Derudover er det muligt at oprette egne events og administrere sin
-            profil. Projektet kombinerer derfor både UX/UI-design,
-            frontendudvikling og arbejde med data og brugerinformation.
+            Jeg har i denne case arbejdet med hvordan koden kunne struktureres
+            og vedligeholdes bedre, hvordan siden kunne blive mere tilgængelig
+            for forskellige brugere, og hvordan brugeroplysninger kunne
+            beskyttes i forbindelse med integrationen til Supabase.
           </p>
         </div>
       </section>
@@ -216,7 +229,7 @@ export default function Mellemrum({ onContact }) {
         </div>
 
         {/* =====================================================
-            01 EVENTOVERSIGT
+            01 UNDERSØGELSE OG PRIORITERING
         ====================================================== */}
 
         <article className="mellemrum-feature">
@@ -236,24 +249,29 @@ export default function Mellemrum({ onContact }) {
           <div className="mellemrum-feature-text">
             <span className="feature-number">01</span>
 
-            <p className="feature-label">EVENTS</p>
-
-            <h3>Overblik over arrangementer</h3>
+            <h3>Undersøgelse og prioritering</h3>
 
             <p>
-              På eventoversigten kan brugeren hurtigt se kommende arrangementer,
-              hvor de foregår, datoen og hvor mange pladser der er tilbage.
+              Jeg tog udgangspunkt i den eksisterende React-løsning og
+              undersøgte, hvilke områder der kunne forbedres teknisk. Jeg
+              prioriterede kodeoptimering, accessibility og datasikkerhed, fordi
+              de har betydning for henholdsvis løsningens vedligeholdelse,
+              brugernes mulighed for at anvende siden og beskyttelsen af
+              personlige oplysninger.
             </p>
 
             <p>
-              Tilmeldingsstatussen er synlig direkte i oversigten, så brugeren
-              ikke behøver åbne hvert event for at få overblik.
+              I arbejdet med accessibility havde jeg fokus på at gøre løsningen
+              mere tilgængelig og anvendelig for forskellige brugere. Samtidig
+              undersøgte jeg, hvordan data blev hentet og håndteret gennem
+              Supabase, og hvordan synligheden af brugeroplysninger kunne
+              begrænses.
             </p>
           </div>
         </article>
 
         {/* =====================================================
-            02 OPRET EVENT
+            02 LØSNING OG FAGLIGE VALG
         ====================================================== */}
 
         <article className="mellemrum-feature mellemrum-feature-reverse">
@@ -263,7 +281,7 @@ export default function Mellemrum({ onContact }) {
             <div className="feature-tape"></div>
 
             <img
-              src={`${import.meta.env.BASE_URL}images/mellemrum-opret.png`}
+              src={`${import.meta.env.BASE_URL}images/kode.png`}
               alt="Opret event i Mellemrum"
             />
           </div>
@@ -273,25 +291,40 @@ export default function Mellemrum({ onContact }) {
           <div className="mellemrum-feature-text">
             <span className="feature-number">02</span>
 
-            <p className="feature-label">OPRET EVENT</p>
-
-            <h3>Brugerne kan selv skabe arrangementer</h3>
+            <h3>Løsningen og faglige valg</h3>
 
             <p>
-              En central funktion i løsningen er, at brugerne selv kan oprette
-              nye events.
+              Jeg har indsat billede af koden, hvor jeg har prioteret at vise fejlbeskeder, hvis der sker en fejl for brugeren.
             </p>
 
             <p>
-              Formularen er designet til at gøre processen enkel og overskuelig,
-              så brugeren hurtigt kan tilføje de vigtigste oplysninger om
-              eventet.
+              Jeg arbejdede med at optimere koden i React med fokus på en mere
+              overskuelig og vedligeholdelsesvenlig opbygning. Her var det
+              vigtigt at forholde mig til komponentstrukturen og til, hvordan
+              løsningen kunne videreudvikles uden at gøre koden unødigt
+              kompleks.
+            </p>
+
+            <p>
+              I mit arbejde med accessibility, havde jeg bla. fokus på
+              atudskifte billeder med third party cookies fra siden, for at øge
+              sikkerheden og privatliv for brugeren. Jeg har også øget kontraten
+              på tekst. For at optimere brugeroplevelsen gjort det muligt for
+              brugeren at oprette events, logge ind og ud og se hvor mange
+              ledige pladser der er på hver event.
+            </p>
+
+            <p>
+              Et tredje fokusområde var sikker datahåndtering gennem Supabase.
+              Jeg arbejdede med at begrænse synligheden af navne og oplysninger
+              om tilmeldte, så andre brugere ikke skulle kunne se oplysninger,
+              de ikke havde behov for eller tilladelse til at tilgå.
             </p>
           </div>
         </article>
 
         {/* =====================================================
-            03 PROFIL / TILMELDINGER
+            03 RESULTAT OG DOKUMENTATION
         ====================================================== */}
 
         <article className="mellemrum-feature">
@@ -311,18 +344,66 @@ export default function Mellemrum({ onContact }) {
           <div className="mellemrum-feature-text">
             <span className="feature-number">03</span>
 
-            <p className="feature-label">TILMELDINGER</p>
-
-            <h3>Personligt overblik</h3>
+            <h3>Resultat og dokumentation</h3>
 
             <p>
-              Brugeren får et samlet overblik over arrangementer og kan se sin
-              aktuelle tilmeldingsstatus.
+              Arbejdet resulterede i en videreudviklet React-løsning med fokus
+              på kodekvalitet, accessibility og sikker datahåndtering. Casen gav
+              mig mulighed for at arbejde med flere centrale aspekter af
+              udviklingen af en digital løsning og forstå, hvordan tekniske valg
+              påvirker både brugerne og den videre vedligeholdelse.
+            </p>
+          </div>
+        </article>
+
+        {/* =====================================================
+            02 FAGLIG REFLEKTION
+        ====================================================== */}
+
+        <article className="mellemrum-feature mellemrum-feature-reverse">
+          {/* VIDEO */}
+
+          <div className="mellemrum-feature-image">
+            <div className="feature-tape"></div>
+
+            <video
+              className="mellemrum-feature-video"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+            >
+              <source
+                src={`${import.meta.env.BASE_URL}videos/tilgængelighed.mp4`}
+                type="video/mp4"
+              />
+              Din browser understøtter ikke video.
+            </video>
+          </div>
+
+          {/* TEKST */}
+
+          <div className="mellemrum-feature-text">
+            <span className="feature-number">02</span>
+
+            <h3>Faglig reflektion</h3>
+
+            <p>
+              Arbejdet med Mellemrum har styrket min forståelse for, at
+              produktoptimering ikke kun handler om brugergrænsefladens
+              udseende, men også om den tekniske kvalitet bag løsningen. En
+              velstruktureret kodebase gør det lettere at vedligeholde og
+              videreudvikle produktet, mens accessibility kan gøre det
+              anvendeligt for flere mennesker.
             </p>
 
             <p>
-              Det gør det lettere at holde styr på kommende events og giver
-              brugeren en mere personlig oplevelse af platformen.
+              Værdien af forbedringerne ligger derfor både i en mere
+              vedligeholdelsesvenlig løsning, bedre tilgængelighed for brugerne
+              og en mere ansvarlig håndtering af deres oplysninger. Det er
+              vigtigt, fordi en digital løsning ikke kun skal fungere teknisk,
+              men også være tilgængelig og behandle brugernes data forsvarligt.
             </p>
           </div>
         </article>
@@ -334,9 +415,7 @@ export default function Mellemrum({ onContact }) {
 
       <section className="mellemrum-process">
         <div className="mellemrum-section-heading">
-          <p>FRA IDÉ TIL LØSNING</p>
-
-          <h2>PROCESSEN</h2>
+          <h2>Arbejdsprocess</h2>
         </div>
 
         <div className="mellemrum-process-grid">
@@ -347,9 +426,12 @@ export default function Mellemrum({ onContact }) {
 
             <div className="process-step-icon">⌕</div>
 
-            <h3>Research</h3>
+            <h3>Analyse</h3>
 
-            <p>Undersøgelse af målgruppe, behov og problemstilling.</p>
+            <p>
+              Gennemgang af den eksisterende React-løsning, koden og de områder,
+              der kunne forbedres.
+            </p>
           </article>
 
           <div className="process-connector">→</div>
@@ -361,9 +443,12 @@ export default function Mellemrum({ onContact }) {
 
             <div className="process-step-icon">✦</div>
 
-            <h3>Idé</h3>
+            <h3>Prioritering</h3>
 
-            <p>Koncept og funktioner blev defineret ud fra indsigterne.</p>
+            <p>
+              Udvælgelse af forbedringer med fokus på kodekvalitet,
+              tilgængelighed og sikkerhed.
+            </p>
           </article>
 
           <div className="process-connector">→</div>
@@ -375,9 +460,12 @@ export default function Mellemrum({ onContact }) {
 
             <div className="process-step-icon">▱</div>
 
-            <h3>UX/UI</h3>
+            <h3>Kodeoptimering</h3>
 
-            <p>Struktur, wireframes og det visuelle design blev udviklet.</p>
+            <p>
+              Forbedring af React-koden med fokus på struktur, overskuelighed og
+              vedligeholdelse.
+            </p>
           </article>
 
           <div className="process-connector">→</div>
@@ -389,9 +477,12 @@ export default function Mellemrum({ onContact }) {
 
             <div className="process-step-icon">&lt;/&gt;</div>
 
-            <h3>Udvikling</h3>
+            <h3>Accessibility</h3>
 
-            <p>Designet blev omsat til en løsning i React.</p>
+            <p>
+              Forbedring af sidens tilgængelighed, så flere brugere kan anvende
+              løsningen.
+            </p>
           </article>
 
           <div className="process-connector">→</div>
@@ -403,9 +494,12 @@ export default function Mellemrum({ onContact }) {
 
             <div className="process-step-icon">◉</div>
 
-            <h3>Database</h3>
+            <h3>Supabase & sikkerhed</h3>
 
-            <p>Supabase håndterer data, brugere og events.</p>
+            <p>
+              Håndtering af data og begrænsning af andre brugeres adgang til
+              tilmeldtes oplysninger.
+            </p>
           </article>
         </div>
       </section>
@@ -433,11 +527,11 @@ export default function Mellemrum({ onContact }) {
           <article className="mellemrum-result-card">
             <span className="mellemrum-result-icon">▦</span>
 
-            <h3>Bedre overblik</h3>
+            <h3>Optimeret kode</h3>
 
             <p>
-              Events og information er samlet i en enkel og overskuelig
-              struktur.
+              Jeg har forbedret React-koden med fokus på en mere overskuelig
+              struktur og lettere vedligeholdelse.
             </p>
           </article>
 
@@ -446,11 +540,12 @@ export default function Mellemrum({ onContact }) {
           <article className="mellemrum-result-card">
             <span className="mellemrum-result-icon">✓</span>
 
-            <h3>Nem tilmelding</h3>
+            <h3>Bedre tilgængelighed</h3>
 
             <p>
-              Brugeren kan hurtigt se ledige pladser og tilmelde sig direkte fra
-              platformen.
+              Jeg har optimeret koden med fokus på accessibility, så sidens
+              struktur og funktioner bliver mere tilgængelige og lettere at
+              navigere i for forskellige brugere.
             </p>
           </article>
 
@@ -459,11 +554,12 @@ export default function Mellemrum({ onContact }) {
           <article className="mellemrum-result-card">
             <span className="mellemrum-result-icon">✦</span>
 
-            <h3>Aktivt fællesskab</h3>
+            <h3>Sikker datahåndtering</h3>
 
             <p>
-              Muligheden for selv at oprette events gør brugeren til en aktiv
-              del af platformen.
+              Jeg har arbejdet med Supabase for at beskytte tilmeldtes
+              oplysninger, så brugernes personlige data ikke er synlige for
+              andre.
             </p>
           </article>
         </div>
@@ -484,14 +580,15 @@ export default function Mellemrum({ onContact }) {
 
         <div className="learning-text">
           <p>
-            Projektet har givet mig mere erfaring med at koble design og
-            udvikling sammen i én samlet digital løsning.
+            Arbejdet med Mellemrum har givet mig en større forståelse for
+            Supabase og datahåndtering, herunder hvordan data kan håndteres
+            sikkert, og hvordan brugeroplysninger beskyttes.
           </p>
 
           <p>
-            Jeg har blandt andet arbejdet med React, Supabase, datahåndtering og
-            med at omsætte et design fra Figma til en fungerende
-            brugeroplevelse.
+            Jeg har desuden fået erfaring med at sætte mig ind i en eksisterende
+            kodebase, identificere områder med forbedringspotentiale og optimere
+            koden med fokus på struktur, vedligeholdelse og accessibility.
           </p>
         </div>
       </section>

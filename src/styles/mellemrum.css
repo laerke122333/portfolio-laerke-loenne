@@ -1710,3 +1710,12 @@
 .project-live-link:hover {
   opacity: 0.85;
 }
+
+.mellemrum-feature-image img,
+.mellemrum-feature-image video {
+  display: block;
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+}
