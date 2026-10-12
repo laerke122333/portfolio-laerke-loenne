@@ -42,12 +42,11 @@ export default function Projects({ onContact }) {
     },
 
     {
-      number: "05",
       title: "DATE IDEA",
       category: "FRITIDSPROJEKT · UX/UI · REACT",
       description:
         "Et personligt projekt udviklet i min fritid med fokus på at gøre det nemmere og sjovere for par at finde inspiration til nye dates.",
-      image: "dateideer.PNG",
+      image: "date-projekt.png",
       to: "/projekter/date-idea",
     },
     {
@@ -55,7 +54,7 @@ export default function Projects({ onContact }) {
       category: "UX/UI · BRUGEROPLEVELSE",
       description:
         "Et projekt med fokus på at gøre det lettere for gæster at finde og vælge spil gennem en mere overskuelig digital løsning.",
-      image: "spil-cafe.card.png",
+      image: "spil-cafe-projekt.png",
       to: "/projekter/spilcafe",
     },
 
@@ -64,7 +63,7 @@ export default function Projects({ onContact }) {
       category: "CUSTOMER EXPERIENCE",
       description:
         "Et projekt med fokus på customer experience, research og udvikling af en sammenhængende digital brugeroplevelse.",
-      image: "north.card.png",
+      image: "north-projekt.png",
       to: "/projekter/north",
     },
 
@@ -154,10 +153,7 @@ export default function Projects({ onContact }) {
                 <span className="project-number">{project.number}</span>
 
                 {/* NYESTE PROJEKT */}
-
-                {project.latest && (
-                  <span className="latest-project-badge">REACT-LØSNING</span>
-                )}
+                
               </div>
 
               {/* TEKST */}

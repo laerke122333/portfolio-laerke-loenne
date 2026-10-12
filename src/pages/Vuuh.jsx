@@ -15,14 +15,6 @@ export default function Vuuh({ onContact }) {
       <section className="mellemrum-hero">
         <div className="mellemrum-hero-shape" />
 
-        <div className="mellemrum-hero-dots">
-          {Array.from({ length: 9 }, (_, index) => (
-            <span key={index} />
-          ))}
-        </div>
-
-        <span className="mellemrum-hero-star">✳</span>
-
         <div className="mellemrum-container">
           <Link to="/projekter" className="mellemrum-back">
             <span>←</span> Tilbage til projekter
@@ -445,7 +437,7 @@ export default function Vuuh({ onContact }) {
 
       {/* FAGLIG REFLEKSION */}
       <section className="mellemrum-learning">
-        <div className="learning-decoration">✳</div>
+        
 
         <div>
           <p className="learning-small-title">MIN UDVIKLING</p>

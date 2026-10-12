@@ -22,9 +22,6 @@ export default function Home({ onContact }) {
 
         {/* PRIKKER */}
 
-       
-        
-
         <div className="hero-content">
           {/* VENSTRE SIDE */}
 
@@ -73,8 +70,6 @@ export default function Home({ onContact }) {
               alt="Lærke Theodine Lønne"
             />
           </div>
-
-          
         </div>
       </section>
 
@@ -83,7 +78,6 @@ export default function Home({ onContact }) {
       ====================================================== */}
 
       <section className="home-about">
-
         {/* FOTO */}
 
         <div className="home-about-image">
@@ -168,15 +162,17 @@ export default function Home({ onContact }) {
             <div className="heading-line"></div>
 
             <p>
-              I min fritid spiller jeg meget golf. Udover at spille med venner
-              og bekendte har jeg været med til at starte et ungefællesskab i
-              min klub.
+              På en arbejdsplads trives jeg godt i samarbejde, men jeg fungerer
+              også godt med selvstændige opgaver. Jeg er god til at holde
+              overblik og arbejde struktureret.
             </p>
 
             <p>
-              Her er vores formål at skabe et større fællesskab for unge i
-              klubben og afholde turneringer. Jeg har også været frivillig på en
-              pigegolfcamp i Himmerland.
+              Jeg er problemløsende, nysgerrig og lærevillig, og jeg motiveres
+              af at udvikle mine kompetencer og finde nye måder at forbedre
+              digitale løsninger på. Jeg lægger vægt på tydelig kommunikation,
+              er åben over for feedback og tilpasser gerne min tilgang for at
+              skabe de bedst mulige resultater.
             </p>
           </div>
         </article>
@@ -204,19 +200,17 @@ export default function Home({ onContact }) {
           <div className="heading-line"></div>
 
           <p>
-            På en arbejdsplads trives jeg godt i samarbejde, men jeg fungerer
-            også godt med selvstændige opgaver. Jeg er god til at holde overblik
-            og arbejde struktureret.
+            I min fritid spiller jeg meget golf. Udover at spille med venner og
+            bekendte har jeg været med til at starte et ungefællesskab i min
+            klub.
           </p>
 
           <p>
-            I gruppearbejde bidrager jeg med struktur, effektivitet og åbenhed
-            over for andres idéer. Jeg har en god forståelse for blandt andet
-            Figma og den visuelle proces.
+            Her er vores formål at skabe et større fællesskab for unge i klubben
+            og afholde turneringer. Jeg har også været frivillig på en
+            pigegolfcamp i Himmerland.
           </p>
         </div>
-
-      
       </section>
 
       {/* =====================================================
@@ -260,8 +254,6 @@ export default function Home({ onContact }) {
       ====================================================== */}
 
       <section className="home-lottie-section">
-
-
         <div className="home-lottie-wrapper">
           <Lottie
             src={`${import.meta.env.BASE_URL}lottie/Scene.json`}

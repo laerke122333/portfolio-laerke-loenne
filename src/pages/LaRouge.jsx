@@ -15,8 +15,6 @@ export default function LaRouge({ onContact }) {
       <section className="mellemrum-hero">
         <div className="mellemrum-hero-shape" />
 
-        <span className="mellemrum-hero-star">✳</span>
-
         <div className="mellemrum-container">
           <Link to="/projekter" className="mellemrum-back">
             <span>←</span> Tilbage til projekter
@@ -127,7 +125,6 @@ export default function LaRouge({ onContact }) {
 
       {/* CASE OG UDFORDRING */}
       <section className="mellemrum-about">
-        <span className="mellemrum-about-star">✳</span>
 
         <div className="mellemrum-about-heading">
           <p>CASE STUDY</p>

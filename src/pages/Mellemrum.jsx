@@ -19,22 +19,7 @@ export default function Mellemrum({ onContact }) {
       <section className="mellemrum-hero">
         <div className="mellemrum-hero-shape"></div>
 
-        <div className="mellemrum-hero-dots">
-          <span></span>
-          <span></span>
-          <span></span>
-
-          <span></span>
-          <span></span>
-          <span></span>
-
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <span className="mellemrum-hero-star">✳</span>
-
+      
         <div className="mellemrum-container">
           {/* TILBAGE */}
 
@@ -54,7 +39,7 @@ export default function Mellemrum({ onContact }) {
               <h1>MELLEMRUM</h1>
 
               <p className="mellemrum-script">
-                Fra prototype til React-løsning
+                Forbedret React-løsning
               </p>
 
               <div className="mellemrum-note">
@@ -124,7 +109,6 @@ export default function Mellemrum({ onContact }) {
                 </video>
               </div>
 
-              <span className="mellemrum-arrow">↗</span>
             </div>
           </div>
         </div>
@@ -185,7 +169,6 @@ export default function Mellemrum({ onContact }) {
       ====================================================== */}
 
       <section className="mellemrum-about">
-        <span className="mellemrum-about-star">✳</span>
 
         <div className="mellemrum-about-heading">
           <p>CASE STUDY</p>
@@ -567,7 +550,6 @@ export default function Mellemrum({ onContact }) {
       ====================================================== */}
 
       <section className="mellemrum-learning">
-        <div className="learning-decoration">✳</div>
 
         <div>
           <p className="learning-small-title">MIN UDVIKLING</p>
