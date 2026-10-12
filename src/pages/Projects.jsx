@@ -6,8 +6,8 @@ import Footer from "../components/Footer";
 export default function Projects({ onContact }) {
   const projects = [
     {
-      title: "LA ROUGE & RE-COMMERCE",
-      category: "UX-analyse · Onboarding · Figma · Acceessibility",
+      title: "RENÈE BY LA ROUGE & RE-COMMERCE",
+      category: "UX-analyse · Onboarding · Figma",
       description:
         "Case projekt med fokus på La rouge, hvor jeg har arbejdet med UX-analyse og udvikling af en onboardingproces for deres secondhandside.",
       image: "la-rouge-forside..png",
@@ -107,7 +107,6 @@ export default function Projects({ onContact }) {
           </p>
         </div>
 
-        <span className="projects-hero-star">✳</span>
       </section>
 
       {/* =====================================================

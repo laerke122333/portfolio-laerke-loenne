@@ -22,19 +22,8 @@ export default function Home({ onContact }) {
 
         {/* PRIKKER */}
 
-        <div className="hero-dots hero-dots-left">
-          <span></span>
-          <span></span>
-          <span></span>
-
-          <span></span>
-          <span></span>
-          <span></span>
-
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+       
+        
 
         <div className="hero-content">
           {/* VENSTRE SIDE */}
@@ -85,7 +74,7 @@ export default function Home({ onContact }) {
             />
           </div>
 
-          <div className="hero-decoration-star">✳</div>
+          
         </div>
       </section>
 
@@ -94,7 +83,6 @@ export default function Home({ onContact }) {
       ====================================================== */}
 
       <section className="home-about">
-        <div className="home-about-decoration">✳</div>
 
         {/* FOTO */}
 
@@ -228,7 +216,7 @@ export default function Home({ onContact }) {
           </p>
         </div>
 
-        <span className="personality-star">✳</span>
+      
       </section>
 
       {/* =====================================================
@@ -272,7 +260,7 @@ export default function Home({ onContact }) {
       ====================================================== */}
 
       <section className="home-lottie-section">
-        <div className="home-lottie-decoration">✳</div>
+
 
         <div className="home-lottie-wrapper">
           <Lottie

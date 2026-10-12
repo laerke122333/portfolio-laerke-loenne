@@ -4,19 +4,7 @@ export default function Footer({ onContact }) {
       {/* Dekoration */}
       <div className="footer-shape"></div>
 
-      <div className="footer-dots">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <div className="footer-star">✳</div>
+     
 
       <div className="portfolio-footer-content">
         {/* VENSTRE SIDE */}

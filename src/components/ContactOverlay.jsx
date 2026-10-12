@@ -43,47 +43,6 @@ export default function ContactOverlay({ open, onClose }) {
         aria-modal="true"
         aria-labelledby="contact-title"
       >
-        {/* =====================================
-            DEKORATIONER
-        ====================================== */}
-
-        <div className="contact-blue-shape"></div>
-
-        <div className="contact-bottom-shape"></div>
-
-        <div className="contact-dots contact-dots-top">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <div className="contact-dots contact-dots-bottom">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <span className="contact-decoration-star contact-star-left">✳</span>
-
-        <span className="contact-decoration-star contact-star-right">✳</span>
-
-        <div className="contact-lines">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
 
         {/* =====================================
             LUK KNAP
@@ -172,7 +131,6 @@ export default function ContactOverlay({ open, onClose }) {
             <div className="contact-bottom">
               <p className="contact-message">Lad os tage en snak! ♡</p>
 
-              <div className="contact-hand-arrow">↝</div>
             </div>
           </div>
 
