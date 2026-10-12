@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import CV from "./pages/CV";
 
+import Larouge from "./pages/LaRouge";
+import Vuuh from "./pages/Vuuh";
 import Mellemrum from "./pages/Mellemrum";
 import Reset from "./pages/Reset";
 import North from "./pages/North";
@@ -81,6 +83,20 @@ export default function App() {
         <Route
           path="/cv"
           element={<CV onContact={() => setContactOpen(true)} />}
+        />
+
+        {/* LAROUGE */}
+
+        <Route
+          path="/projekter/larouge"
+          element={<Larouge onContact={() => setContactOpen(true)} />}
+        />
+
+        {/* VUUH */}
+
+        <Route
+          path="/projekter/vuuh"
+          element={<Vuuh onContact={() => setContactOpen(true)} />}
         />
 
         {/* MELLEMRUM */}

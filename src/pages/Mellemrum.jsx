@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 export default function Mellemrum({ onContact }) {
   return (
-    <div className="mellemrum-page">
+    <div className="vuuh-page">
       {/* =====================================================
           HEADER
       ====================================================== */}
@@ -100,11 +100,8 @@ export default function Mellemrum({ onContact }) {
                 {/* BROWSER TOP */}
 
                 <div className="mellemrum-browser-top">
-                  <div className="browser-dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
+                  
+                  
 
                   <div className="browser-address">mellemrum.</div>
                 </div>

@@ -12,6 +12,9 @@ import "./styles/home.css";
 import "./styles/project.css";
 import "./styles/projects.css";
 import "./styles/mellemrum.css";
+import "./styles/vuuh.css";
+import "./styles/larouge.css";
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

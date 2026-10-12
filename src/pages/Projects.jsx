@@ -6,10 +6,27 @@ import Footer from "../components/Footer";
 export default function Projects({ onContact }) {
   const projects = [
     {
+      title: "LA ROUGE & RE-COMMERCE",
+      category: "UX-analyse · Onboarding · Figma · Acceessibility",
+      description:
+        "Case projekt med fokus på La rouge, hvor jeg har arbejdet med UX-analyse og udvikling af en onboardingproces for deres secondhandside.",
+      image: "la-rouge-forside..png",
+      to: "/projekter/larouge",
+    },
+    {
+      title: "VUUH ONBOARDING",
+      category: "UX-analyse · Onboarding · Figma · Acceessibility",
+      description:
+        "Et projekt med fokus på UX-analyse og udvikling af en onboardingproces for en digital platform.",
+      image: "vuuh-onboarding.png",
+      to: "/projekter/vuuh",
+    },
+
+    {
       title: "MELLEMRUM",
       category: "UX/UI · REACT · SUPABASE",
       description:
-        "En digital eventplatform, hvor brugere kan finde arrangementer, tilmelde sig og selv oprette events.",
+        "Et projekt med fokus på optimering af React-kode og Supabase.",
       image: "mellemrum-hero.png",
       to: "/projekter/mellemrum",
       latest: true,
@@ -23,7 +40,7 @@ export default function Projects({ onContact }) {
       image: "resetbillede.png",
       to: "/projekter/reset",
     },
-    
+
     {
       number: "05",
       title: "DATE IDEA",
@@ -111,11 +128,6 @@ export default function Projects({ onContact }) {
             </h2>
           </div>
 
-          <p className="projects-heading-text">
-            Her er et udvalg af projekter, hvor jeg har arbejdet med forskellige
-            dele af den digitale designproces – fra research og idéudvikling til
-            design og udvikling.
-          </p>
         </div>
 
         {/* =====================================================
