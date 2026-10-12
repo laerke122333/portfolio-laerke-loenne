@@ -145,7 +145,7 @@ export default function Projects({ onContact }) {
                 {/* NYESTE PROJEKT */}
 
                 {project.latest && (
-                  <span className="latest-project-badge">NYESTE PROJEKT</span>
+                  <span className="latest-project-badge">REACT-LØSNING</span>
                 )}
               </div>
 
