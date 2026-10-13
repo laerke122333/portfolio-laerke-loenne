@@ -285,12 +285,6 @@ export default function Mellemrum({ onContact }) {
               mange ledige pladser der er på hver event.
             </p>
 
-            <p>
-              Et tredje fokusområde var sikker datahåndtering gennem Supabase.
-              Jeg arbejdede med at begrænse synligheden af navne og oplysninger
-              om tilmeldte, så andre brugere ikke skulle kunne se oplysninger,
-              de ikke havde behov for eller tilladelse til at tilgå.
-            </p>
           </div>
         </article>
 
@@ -470,67 +464,6 @@ export default function Mellemrum({ onContact }) {
             <p>
               Håndtering af data og begrænsning af andre brugeres adgang til
               tilmeldtes oplysninger.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      {/* =====================================================
-          RESULTAT
-      ====================================================== */}
-
-      <section className="mellemrum-results">
-        <div className="mellemrum-result-shape"></div>
-
-        <div className="mellemrum-section-heading">
-          <p>DEN ENDELIGE LØSNING</p>
-
-          <h2>RESULTATET</h2>
-
-          <p className="mellemrum-results-script">
-            Det vigtigste fra løsningen
-          </p>
-        </div>
-
-        <div className="mellemrum-results-grid">
-          {/* RESULTAT 1 */}
-
-          <article className="mellemrum-result-card">
-            <span className="mellemrum-result-icon">▦</span>
-
-            <h3>Optimeret kode</h3>
-
-            <p>
-              Jeg har forbedret React-koden med fokus på en mere overskuelig
-              struktur og lettere vedligeholdelse.
-            </p>
-          </article>
-
-          {/* RESULTAT 2 */}
-
-          <article className="mellemrum-result-card">
-            <span className="mellemrum-result-icon">✓</span>
-
-            <h3>Bedre tilgængelighed</h3>
-
-            <p>
-              Jeg har optimeret koden med fokus på accessibility, så sidens
-              struktur og funktioner bliver mere tilgængelige og lettere at
-              navigere i for forskellige brugere.
-            </p>
-          </article>
-
-          {/* RESULTAT 3 */}
-
-          <article className="mellemrum-result-card">
-            <span className="mellemrum-result-icon">✦</span>
-
-            <h3>Sikker datahåndtering</h3>
-
-            <p>
-              Jeg har arbejdet med Supabase for at beskytte tilmeldtes
-              oplysninger, så brugernes personlige data ikke er synlige for
-              andre.
             </p>
           </article>
         </div>

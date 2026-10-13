@@ -92,7 +92,6 @@ export default function Vuuh({ onContact }) {
                   Din browser understøtter ikke video.
                 </video>
               </div>
-
             </div>
           </div>
         </div>
@@ -185,26 +184,11 @@ export default function Vuuh({ onContact }) {
             <h3>Undersøgelse og prioritering</h3>
 
             <p>
-              Vi gennemførte en heuristisk evaluering med udgangspunkt i
-              Nielsens heuristikker og et Cognitive Walkthrough for at undersøge
-              brugerens vej gennem onboardingprocessen. Vi dokumenterede
-              observationer, potentielle usability-problemer og deres betydning
-              for brugeroplevelsen.
-            </p>
-
-            <p>
-              Analysen viste tre gennemgående problemer: mangel på information,
-              manglende intuitiv navigation og utilstrækkelig feedback. Brugeren
-              blev blandt andet mødt af en startside uden tydelig retning, en
-              installation uden tilstrækkelig vejledning og manglende
-              bekræftelse på udførte handlinger.
-            </p>
-
-            <p>
-              På baggrund af vores UX Audit Summary, prioriterede vi problemerne
-              efter deres betydning for om brugeren kunne gennemføre onboarding.
-              Manglen på vejledning og den uklare installationsproces blev
-              prioriteret højest.
+              Vi evaluerede onboarding med Nielsens heuristikker og et Cognitive
+              Walkthrough. Analysen viste især mangel på information, uklar
+              navigation og manglende feedback. På baggrund af vores UX Audit
+              Summary prioriterede vi at gøre installationsprocessen mere
+              overskuelig og guide brugeren tydeligere gennem onboarding.
             </p>
           </div>
         </article>
@@ -231,13 +215,6 @@ export default function Vuuh({ onContact }) {
               og overskuelig. En central ændring var at forenkle Vuuhs
               dashboard, så brugeren mødes af færre valgmuligheder og lettere
               kan identificere sit næste skridt.
-            </p>
-
-            <p>
-              Vi fjernede blandt andet sektionen med foreslåede brands, da den
-              skabte et unødvendigt valg tidligt i processen. I stedet
-              fokuserede vi på en tydeligere vej til at forbinde Shopify med
-              Vuuh.
             </p>
 
             <p>
@@ -274,13 +251,6 @@ export default function Vuuh({ onContact }) {
               vejledning. UX Audit Summary og Figma-prototypen dokumenterer
               henholdsvis de identificerede problemer og vores forslag til
               forbedringer.
-            </p>
-
-            <p>
-              Redesignet tager direkte udgangspunkt i analysens fund og forsøger
-              at gøre vejen fra første besøg til en gennemført integration mere
-              forståelig. Og guider brugeren gennem processen med færre
-              spørgsmål og større sikkerhed.
             </p>
           </div>
         </article>
@@ -378,53 +348,6 @@ export default function Vuuh({ onContact }) {
             <h3>Næste skridt</h3>
             <p>
               Brugertest skal undersøge, om løsningen er lettere at gennemføre.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      {/* RESULTATER */}
-      <section className="mellemrum-results">
-        <div className="mellemrum-result-shape" />
-
-        <div className="mellemrum-section-heading">
-          <p>DEN FORESLÅEDE LØSNING</p>
-          <h2>DE VIGTIGSTE FORBEDRINGER</h2>
-
-          <p className="mellemrum-results-script">En tydeligere vej frem</p>
-        </div>
-
-        <div className="mellemrum-results-grid">
-          <article className="mellemrum-result-card">
-            <span className="mellemrum-result-icon">▦</span>
-
-            <h3>Mere overblik</h3>
-
-            <p>
-              Et simplere dashboard hjælper brugeren med at fokusere på næste
-              skridt.
-            </p>
-          </article>
-
-          <article className="mellemrum-result-card">
-            <span className="mellemrum-result-icon">✓</span>
-
-            <h3>Guidet installation</h3>
-
-            <p>
-              Trinvis vejledning skal gøre det lettere at forbinde Vuuh og
-              Shopify.
-            </p>
-          </article>
-
-          <article className="mellemrum-result-card">
-            <span className="mellemrum-result-icon">✦</span>
-
-            <h3>Tydeligere feedback</h3>
-
-            <p>
-              Bedre information skal hjælpe brugeren med at forstå status og
-              næste handling.
             </p>
           </article>
         </div>

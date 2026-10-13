@@ -352,53 +352,7 @@ export default function LaRouge({ onContact }) {
         </div>
       </section>
 
-      {/* RESULTATER */}
-      <section className="mellemrum-results">
-        <div className="mellemrum-result-shape" />
-
-        <div className="mellemrum-section-heading">
-          <p>DEN FORESLÅEDE LØSNING</p>
-          <h2>DE VIGTIGSTE FORBEDRINGER</h2>
-
-          <p className="mellemrum-results-script">Secondhand med nyt liv</p>
-        </div>
-
-        <div className="mellemrum-results-grid">
-          <article className="mellemrum-result-card">
-            <span className="mellemrum-result-icon">✦</span>
-
-            <h3>En tydelig identitet</h3>
-
-            <p>
-              Renée by La Rouge giver secondhand-konceptet sit eget udtryk med
-              en klar forbindelse til hovedbrandets værdier.
-            </p>
-          </article>
-
-          <article className="mellemrum-result-card">
-            <span className="mellemrum-result-icon">↗</span>
-
-            <h3>En lettere salgsrejse</h3>
-
-            <p>
-              Et trinopdelt flow og tydelig information skal gøre det lettere at
-              sælge tidligere købte styles.
-            </p>
-          </article>
-
-          <article className="mellemrum-result-card">
-            <span className="mellemrum-result-icon">↻</span>
-
-            <h3>Forlænget levetid</h3>
-
-            <p>
-              Konceptet gør videresalg til en naturlig del af La Rouges univers
-              og understøtter cirkularitet.
-            </p>
-          </article>
-        </div>
-      </section>
-
+      
       {/* FAGLIG REFLEKSION */}
       <section className="mellemrum-learning">
         <div>
@@ -414,15 +368,6 @@ export default function LaRouge({ onContact }) {
             begrunde visuelle valg ud fra brandets værdier og målgruppens behov.
           </p>
 
-          <p>
-            Jeg har også fået en bedre forståelse for, hvordan en digital
-            brugerrejse kan understøtte et koncept. I dette projekt handlede det
-            ikke kun om at gøre secondhand visuelt attraktivt, men også om at
-            gøre det lettere at gennemføre et salg. Et naturligt næste skridt
-            ville være at brugerteste prototypen med målgruppen og undersøge, om
-            salgsflowet opleves som tydeligt og trygt.
-            
-          </p>
         </div>
       </section>
 
