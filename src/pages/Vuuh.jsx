@@ -93,7 +93,6 @@ export default function Vuuh({ onContact }) {
                 </video>
               </div>
 
-              <span className="mellemrum-arrow">↗</span>
             </div>
           </div>
         </div>
@@ -135,8 +134,6 @@ export default function Vuuh({ onContact }) {
 
       {/* CASE OG UDFORDRING */}
       <section className="mellemrum-about">
-        <span className="mellemrum-about-star">✳</span>
-
         <div className="mellemrum-about-heading">
           <p>CASE STUDY</p>
           <h2>Casen og udfordringen</h2>
@@ -204,10 +201,10 @@ export default function Vuuh({ onContact }) {
             </p>
 
             <p>
-              På baggrund af vores UX Audit Summary prioriterede vi problemerne
-              efter deres betydning for, om brugeren kunne gennemføre
-              onboarding. Manglen på vejledning og den uklare
-              installationsproces blev prioriteret højest.
+              På baggrund af vores UX Audit Summary, prioriterede vi problemerne
+              efter deres betydning for om brugeren kunne gennemføre onboarding.
+              Manglen på vejledning og den uklare installationsproces blev
+              prioriteret højest.
             </p>
           </div>
         </article>
@@ -282,8 +279,8 @@ export default function Vuuh({ onContact }) {
             <p>
               Redesignet tager direkte udgangspunkt i analysens fund og forsøger
               at gøre vejen fra første besøg til en gennemført integration mere
-              forståelig. Forbedringernes faktiske effekt kræver efterfølgende
-              brugertest.
+              forståelig. Og guider brugeren gennem processen med færre
+              spørgsmål og større sikkerhed.
             </p>
           </div>
         </article>
@@ -310,14 +307,12 @@ export default function Vuuh({ onContact }) {
               UX-evaluering kan bruges til at identificere og prioritere
               problemer frem for at redesigne ud fra personlige præferencer. Jeg
               har lært at koble konkrete observationer til designbeslutninger og
-              se onboarding som mere end en introduktion til et produkt: Det er
-              en proces, hvor brugeren skal guides sikkert frem mod sit mål.
+              se onboarding som mere end en introduktion til et produkt.
             </p>
 
             <p>
-              Et naturligt næste skridt ville være at brugerteste prototypen for
-              at undersøge, om brugerne kan gennemføre integrationen med færre
-              tvivlsspørgsmål og større sikkerhed.
+              Et naturligt næste skridt er at teste Figma-prototypen med brugere
+              og undersøge, om de kan gennemføre integrationen mere intuitivt.
             </p>
           </div>
         </article>
@@ -437,8 +432,6 @@ export default function Vuuh({ onContact }) {
 
       {/* FAGLIG REFLEKSION */}
       <section className="mellemrum-learning">
-        
-
         <div>
           <p className="learning-small-title">MIN UDVIKLING</p>
           <h2>Hvad har jeg lært?</h2>
@@ -454,11 +447,24 @@ export default function Vuuh({ onContact }) {
           <p>
             Jeg har fået en bedre forståelse for, hvordan onboarding skal guide
             brugeren mod et klart mål, og hvordan information, feedback og færre
-            unødvendige valg kan mindske usikkerhed. Et naturligt næste skridt
-            er at teste Figma-prototypen med brugere og undersøge, om de kan
-            gennemføre integrationen mere intuitivt.
+            unødvendige valg kan mindske usikkerhed.
           </p>
         </div>
+      </section>
+
+      {/* =====================================================
+          TILBAGE TIL PROJEKTER
+      ====================================================== */}
+
+      <section className="mellemrum-bottom">
+        <p>SE MERE</p>
+
+        <h2>Se mine andre projekter</h2>
+
+        <Link to="/projekter" className="mellemrum-bottom-button">
+          Alle projekter
+          <span>→</span>
+        </Link>
       </section>
 
       <Footer onContact={onContact} />

@@ -40,7 +40,7 @@ export default function LaRouge({ onContact }) {
                   subbrand med fokus på kvalitet, cirkularitet og en mere
                   overskuelig digital brugerrejse.
                 </p>
-              </div>
+             
 
               <a
                 href="https://www.figma.com/proto/4umfWJHHIXawLBI0zhRBZQ/La-Rouge?page-id=19%3A4&node-id=19-203&viewport=670%2C576%2C0.06&t=NQ7TpeVOhNNpWIZz-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=19%3A203"
@@ -51,7 +51,7 @@ export default function LaRouge({ onContact }) {
                 Se Figma prototype →
               </a>
             </div>
-
+ </div>
             <div className="mellemrum-hero-image-area">
               <div className="mellemrum-image-blob" />
 
@@ -82,8 +82,6 @@ export default function LaRouge({ onContact }) {
                   Din browser understøtter ikke video.
                 </video>
               </div>
-
-              <span className="mellemrum-arrow">↗</span>
             </div>
           </div>
         </div>
@@ -125,7 +123,6 @@ export default function LaRouge({ onContact }) {
 
       {/* CASE OG UDFORDRING */}
       <section className="mellemrum-about">
-
         <div className="mellemrum-about-heading">
           <p>CASE STUDY</p>
           <h2>Casen og udfordringen</h2>
@@ -136,7 +133,7 @@ export default function LaRouge({ onContact }) {
             La Rouge havde allerede et secondhand-koncept, men det manglede en
             tydelig visuel identitet og en mere selvstændig digital
             tilstedeværelse. Udfordringen var at gøre secondhand mere synligt og
-            attraktivt uden at miste forbindelsen til La Rouges eksisterende
+            attraktivt, uden at miste forbindelsen til La Rouges eksisterende
             brand.
           </p>
 
@@ -212,16 +209,19 @@ export default function LaRouge({ onContact }) {
             <h3>En tydeligere indgang til secondhand</h3>
 
             <p>
-              Vi redesignede forsiden, så secondhand fik en mere fremtrædende
-              rolle. Kunden mødes af tydelige indgange til både at købe brugt
-              tøj og sælge tidligere købte styles videre, samt mulighed for
-              tydelig information om konceptet og dets fordele.
+              Vi redesignede forsiden på secondhand siden ved bla. at indsætte
+              et stort hero-billede for blikfang og indsætte CTA-knapper med
+              klar information for hvad man kan på siden. Kunden mødes af
+              tydelige indgange til både at købe brugt tøj og sælge tidligere
+              købte styles videre, samt mulighed for tydelig information om
+              konceptet og dets fordele.
             </p>
 
             <p>
-              Formålet var at gøre muligheden mere synlig og skabe et mere
-              sammenhængende univers, hvor kvalitet, stil og genbrug hænger
-              naturligt sammen.
+              Formålet var at gøre La rouges secondhand mere attraktiv for
+              målgruppen og gøre salgsflowet mere intuitivt. Samt skabe en
+              visuel identitet for RENÈE, der signalerer kvalitet og
+              cirkularitet.
             </p>
           </div>
         </article>
@@ -277,12 +277,13 @@ export default function LaRouge({ onContact }) {
 
             <p>
               Vi designede et flow, hvor kunden guides gennem processen med
-              konkrete instruktioner og visuelle trin. QR-koden og pakkeguiden
-              skal gøre det lettere at forstå, hvordan tøjet sendes ind.
+              konkrete instruktioner og visuelle trin. F.eks. når kunden har
+              valgt de styles, de vil sælge til La rouge, bliver de sendt videre
+              til en både visuel og tekst guide.
             </p>
 
             <p>
-              Målet var at gøre processen mere overskuelig og mindske den
+              Det er med til at gøre processen mere overskuelig og mindske den
               usikkerhed, der kan få kunder til at opgive, før de har gennemført
               salget.
             </p>
@@ -400,8 +401,6 @@ export default function LaRouge({ onContact }) {
 
       {/* FAGLIG REFLEKSION */}
       <section className="mellemrum-learning">
-        <div className="learning-decoration">✳</div>
-
         <div>
           <p className="learning-small-title">MIN UDVIKLING</p>
           <h2>Hvad har jeg lært?</h2>
@@ -422,8 +421,24 @@ export default function LaRouge({ onContact }) {
             gøre det lettere at gennemføre et salg. Et naturligt næste skridt
             ville være at brugerteste prototypen med målgruppen og undersøge, om
             salgsflowet opleves som tydeligt og trygt.
+            
           </p>
         </div>
+      </section>
+
+      {/* =====================================================
+          TILBAGE TIL PROJEKTER
+      ====================================================== */}
+
+      <section className="mellemrum-bottom">
+        <p>SE MERE</p>
+
+        <h2>Se mine andre projekter</h2>
+
+        <Link to="/projekter" className="mellemrum-bottom-button">
+          Alle projekter
+          <span>→</span>
+        </Link>
       </section>
 
       <Footer onContact={onContact} />

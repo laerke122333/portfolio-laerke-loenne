@@ -19,7 +19,6 @@ export default function Mellemrum({ onContact }) {
       <section className="mellemrum-hero">
         <div className="mellemrum-hero-shape"></div>
 
-      
         <div className="mellemrum-container">
           {/* TILBAGE */}
 
@@ -38,20 +37,16 @@ export default function Mellemrum({ onContact }) {
 
               <h1>MELLEMRUM</h1>
 
-              <p className="mellemrum-script">
-                Forbedret React-løsning
-              </p>
+              <p className="mellemrum-script">Forbedret React-løsning</p>
 
               <div className="mellemrum-note">
                 <div className="mellemrum-note-tape"></div>
 
                 <p>
-                  Mellemrum var min første case i Product Optimization, hvor
-                  fokus var at videreudvikle en eksisterende prototype til en
-                  fungerende React-løsning. Formålet med projektet var at
-                  omsætte det eksisterende design til et digitalt produkt, hvor
-                  både brugeroplevelsen, funktionaliteten og den tekniske
-                  opbygning skulle hænge sammen.
+                  Mellemrum er en af de cases jeg arbejdet med i Product
+                  Optimization, hvor jeg har arbejdet med at optimere og
+                  videreudvikle en eksisterende React-kode, forbedre
+                  accessibility og sikre datahåndtering gennem Supabase.
                 </p>
 
                 <a
@@ -85,9 +80,6 @@ export default function Mellemrum({ onContact }) {
                 {/* BROWSER TOP */}
 
                 <div className="mellemrum-browser-top">
-                  
-                  
-
                   <div className="browser-address">mellemrum.</div>
                 </div>
 
@@ -108,7 +100,6 @@ export default function Mellemrum({ onContact }) {
                   Din browser understøtter ikke video.
                 </video>
               </div>
-
             </div>
           </div>
         </div>
@@ -169,7 +160,6 @@ export default function Mellemrum({ onContact }) {
       ====================================================== */}
 
       <section className="mellemrum-about">
-
         <div className="mellemrum-about-heading">
           <p>CASE STUDY</p>
 
@@ -178,17 +168,16 @@ export default function Mellemrum({ onContact }) {
 
         <div className="mellemrum-about-text">
           <p>
-            Mellemrum er udviklet med fokus på accessibility og refaktorere
-            koden. Den centrale udfordring var at sikre, at designet ikke kun
-            fungerede visuelt, men også kunne omsættes til en brugbar og
-            videreudviklingsvenlig løsning i React.
+            Formålet med casen var at undersøge prototypen, prioritere de
+            vigtigste problemer og gennemføre relevante forbedringer- og dermed
+            vertificer deres effekt.
           </p>
 
           <p>
-            Jeg har i denne case arbejdet med hvordan koden kunne struktureres
-            og vedligeholdes bedre, hvordan siden kunne blive mere tilgængelig
-            for forskellige brugere, og hvordan brugeroplysninger kunne
-            beskyttes i forbindelse med integrationen til Supabase.
+            Udfordringen med prototypen var, at prototypen havde nogle tekniske
+            udfordringer, der påvirkede både brugeroplevelsen og
+            vedligeholdelsen af koden. Derudover var der behov for at forbedre
+            accessibility og sikre datahåndtering gennem Supabase.
           </p>
         </div>
       </section>
@@ -274,7 +263,8 @@ export default function Mellemrum({ onContact }) {
             <h3>Løsningen og faglige valg</h3>
 
             <p>
-              Jeg har indsat billede af koden, hvor jeg har prioteret at vise fejlbeskeder, hvis der sker en fejl for brugeren.
+              Jeg har indsat billede af koden, hvor jeg har prioteret at vise
+              fejlbeskeder, hvis der sker en fejl for brugeren.
             </p>
 
             <p>
@@ -282,16 +272,17 @@ export default function Mellemrum({ onContact }) {
               overskuelig og vedligeholdelsesvenlig opbygning. Her var det
               vigtigt at forholde mig til komponentstrukturen og til, hvordan
               løsningen kunne videreudvikles uden at gøre koden unødigt
-              kompleks.
+              kompleks. I koden har jeg opdelt alle sider i komponenter, så de
+              er nemmere at overskue og vedligeholde.
             </p>
 
             <p>
-              I mit arbejde med accessibility, havde jeg bla. fokus på
-              atudskifte billeder med third party cookies fra siden, for at øge
+              I mit arbejde med accessibility, havde jeg bla. fokus på at
+              udskifte billeder med third party cookies fra siden, for at øge
               sikkerheden og privatliv for brugeren. Jeg har også øget kontraten
-              på tekst. For at optimere brugeroplevelsen gjort det muligt for
-              brugeren at oprette events, logge ind og ud og se hvor mange
-              ledige pladser der er på hver event.
+              på tekst. For at optimere brugeroplevelsen har jeg gjort det
+              muligt for brugeren at oprette events, logge ind og ud og se hvor
+              mange ledige pladser der er på hver event.
             </p>
 
             <p>
@@ -328,10 +319,10 @@ export default function Mellemrum({ onContact }) {
 
             <p>
               Arbejdet resulterede i en videreudviklet React-løsning med fokus
-              på kodekvalitet, accessibility og sikker datahåndtering. Casen gav
-              mig mulighed for at arbejde med flere centrale aspekter af
-              udviklingen af en digital løsning og forstå, hvordan tekniske valg
-              påvirker både brugerne og den videre vedligeholdelse.
+              på kodekvalitet, accessibility og sikker datahåndtering. Jeg har
+              gjort koden mere overskuelig og vedligeholdelsesvenlig, forbedret
+              tilgængeligheden for brugerne og begrænset synligheden af
+              personlige oplysninger gennem Supabase.
             </p>
           </div>
         </article>
@@ -550,7 +541,6 @@ export default function Mellemrum({ onContact }) {
       ====================================================== */}
 
       <section className="mellemrum-learning">
-
         <div>
           <p className="learning-small-title">MIN UDVIKLING</p>
 
@@ -567,7 +557,9 @@ export default function Mellemrum({ onContact }) {
           <p>
             Jeg har desuden fået erfaring med at sætte mig ind i en eksisterende
             kodebase, identificere områder med forbedringspotentiale og optimere
-            koden med fokus på struktur, vedligeholdelse og accessibility.
+            koden med fokus på struktur, vedligeholdelse og accessibility. Et
+            relevant næste skridt ville være at gennemføre yderligere
+            accessibility-tests og systematisk teste adgangsreglerne i Supabase.
           </p>
         </div>
       </section>
