@@ -40,18 +40,26 @@ export default function LaRouge({ onContact }) {
                   subbrand med fokus på kvalitet, cirkularitet og en mere
                   overskuelig digital brugerrejse.
                 </p>
-             
 
-              <a
-                href="https://www.figma.com/proto/4umfWJHHIXawLBI0zhRBZQ/La-Rouge?page-id=19%3A4&node-id=19-203&viewport=670%2C576%2C0.06&t=NQ7TpeVOhNNpWIZz-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=19%3A203"
-                target="_blank"
-                rel="noreferrer"
-                className="project-live-link"
-              >
-                Se Figma prototype →
-              </a>
+                <a
+                  href="https://www.figma.com/design/4umfWJHHIXawLBI0zhRBZQ/La-Rouge?node-id=94-159&t=pL7pyOq0rK9iiKw9-1"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-live-link"
+                >
+                  Se Branddeck →
+                </a>
+
+                <a
+                  href="https://www.figma.com/proto/4umfWJHHIXawLBI0zhRBZQ/La-Rouge?page-id=19%3A4&node-id=19-203&viewport=670%2C576%2C0.06&t=NQ7TpeVOhNNpWIZz-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=19%3A203"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-live-link"
+                >
+                  Se Figma prototype →
+                </a>
+              </div>
             </div>
- </div>
             <div className="mellemrum-hero-image-area">
               <div className="mellemrum-image-blob" />
 
@@ -352,7 +360,6 @@ export default function LaRouge({ onContact }) {
         </div>
       </section>
 
-      
       {/* FAGLIG REFLEKSION */}
       <section className="mellemrum-learning">
         <div>
@@ -367,7 +374,6 @@ export default function LaRouge({ onContact }) {
             til et eksisterende brand. Jeg har lært, hvor vigtigt det er at
             begrunde visuelle valg ud fra brandets værdier og målgruppens behov.
           </p>
-
         </div>
       </section>
 
