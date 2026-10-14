@@ -40,16 +40,14 @@ export default function Vuuh({ onContact }) {
                   med Shopify.
                 </p>
 
-                {uxAuditUrl && (
-                  <a
-                    href={uxAuditUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="project-live-link"
-                  >
-                    Se UX Audit Summary →
-                  </a>
-                )}
+                <a
+                  href="https://docs.google.com/document/d/1qyzyEcn3M1SvJG83chtBwg1iO6UUJlb1buvsUFIHto4/edit?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-live-link"
+                >
+                  Se UX Audit Summary →
+                </a>
 
                 <a
                   href="https://www.figma.com/proto/FZNTrqToDfjYlKVa3ePIXZ/Case-2--Prototype---forarbejde?node-id=214-697&page-id=214%3A534&starting-point-node-id=214%3A697&scaling=scale-down-width&content-scaling=fixed&t=XKbwtoi1LXs0YxqI-1"
